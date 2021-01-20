@@ -1,30 +1,32 @@
 Rellena
 
 <form method="post" action="https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/">
-  <label for="">Nombre completo</label>
-  <input type="text" name="firstName" />
+  <label for="name">Nombre completo</label>
+  <input type="text" name="name" placeholder="Nombre completo" required/>
 
-  <label for="">Puesto</label>
-  <input type="text" />
+  <label for="job">Puesto</label>
+  <input type="text" name="job" id="job" placeholder="Profesión" required/>
 
-  <label for="">Imagen de perfil</label>
+  <label for="photo">Imagen de perfil</label>
   <input
     class="btn__submit--image"
     type="submit"
     value="Anadir imagen"
-    name="submit"
+    name="photo"
+    id="photo"
+    required
   />
   <div class="preview__image"></div>
 
-  <label for="">Email</label>
-  <input type="email" />
+  <label for="email">Email</label>
+  <input type="email" name="email" id="email" placeholder="maria.garcia@example.com" required/>
 
-  <label for="">Telefono</label>
-  <input type="tel" />
+  <label for="phone">Telefono</label>
+  <input type="tel" name="phone" id="phone" placeholder="+34 666666666" />
 
-  <label for="">Linkedin</label>
-  <input type="url" />
+  <label for="linkedin">Linkedin</label>
+  <input type="url" name="linkedin" id="linkedin" placeholder="Nombre de usuario de LinkedIn" required/>
 
-  <label for="">Github</label>
-  <input type="url" />
+  <label for="github">Github</label>
+  <input type="url" name="github" id="github" placeholder="Nombre de usuario de GitHub" required/>
 </form>
