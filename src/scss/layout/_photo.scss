@@ -1,11 +1,14 @@
 .section__card {
   box-sizing: border-box;
-  height: 457px;
   background-image: linear-gradient(to bottom, #bfcdd0, #dde9ed);
-  padding-top: 30px;
-  padding-bottom: 40px;
-  padding-left: 45px;
+  padding: 30px 0 40px;
+  display: flex;
+  justify-content: center;
+  @media all and (min-width: 768px) {
+    padding: 173px 0 260px;
+  }
 }
+
 .reset {
   box-sizing: border-box;
   margin-bottom: 20px;
@@ -18,6 +21,10 @@
   text-transform: uppercase;
   color: #54585a;
 }
+
+/* .section__container {
+  margin: auto;
+} */
 
 .card {
   box-sizing: border-box;
@@ -56,6 +63,9 @@
   }
   &__image {
     margin-bottom: 10px;
+    box-sizing: border-box;
+    width: 240px;
+    height: 200px;
   }
 }
 .logo__list {
