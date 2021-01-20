@@ -1,0 +1,23 @@
+.section__card {
+  height: 457px;
+  background-image: linear-gradient(to bottom, #bfcdd0, #dde9ed);
+  padding-top: 30px;
+  padding-bottom: 40px;
+  padding-left: 45px;
+}
+.reset {
+  margin-bottom: 20px;
+}
+
+.card {
+  width: 240px;
+  height: 329px;
+  border-radius: 2px;
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.35);
+  background-color: #ffffff;
+
+  &__titles {
+    margin-top: 21px;
+    margin-bottom: 10px;
+  }
+}
