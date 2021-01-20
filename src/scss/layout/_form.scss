@@ -1,0 +1,22 @@
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 400px;
+  width: 300px;
+  padding: 5px 20px;
+  line-height: 2;
+}
+
+input {
+  height: 30px;
+}
+
+.btn__submit--image {
+  height: 40px;
+  width: 140px;
+  background: #e17334;
+  border-radius: 3px;
+  border: none;
+  color: white;
+}
