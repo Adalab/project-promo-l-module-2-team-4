@@ -1,0 +1,63 @@
+.collapsable__header {
+  margin: 0 20px 0 23px;
+  border-top: 1px solid #d8d8d8;
+  & .fa-share-alt {
+    width: 16px;
+    height: 18px;
+    color: #e17334;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    margin-right: 12px;
+  }
+  & .tittle-design {
+    text-transform: uppercase;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    color: #54585a;
+    margin-right: 100px;
+  }
+  & .fa-chevron-down {
+    width: 16px;
+    height: 18px;
+    margin: 13px 0 33px 24px;
+    color: #54585a;
+  }
+}
+
+.button__create {
+  width: 199px;
+  height: 50px;
+  margin: 0 60px 60px 60px;
+  //padding: 13px 18px 13px 17px;
+  border: transparent;
+  border-radius: 12px;
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+  background-color: #e17334;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  & .fa-address-card-o {
+    width: 25px;
+    height: 22px;
+    font-size: 22px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+    margin-right: 9px;
+  }
+  &:active {
+    background-color: #d5d5d5;
+  }
+}
