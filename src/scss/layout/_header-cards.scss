@@ -1,0 +1,10 @@
+.header__cards {
+  box-sizing: border-box;
+  height: 111px;
+  padding: 31px 0 30px 40px;
+  background-color: #ffffff;
+  &--photo {
+    height: 50px;
+    width: 201px;
+  }
+}
