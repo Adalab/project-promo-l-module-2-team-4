@@ -32,8 +32,7 @@
 .button__create {
   width: 199px;
   height: 50px;
-  margin: 0 60px 60px 60px;
-  //padding: 13px 18px 13px 17px;
+  margin: 0 60px 30px 60px;
   border: transparent;
   border-radius: 12px;
   box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
@@ -59,5 +58,67 @@
   }
   &:active {
     background-color: #d5d5d5;
+  }
+}
+.confirm__share {
+  border-top: 1px solid #d8d8d8;
+  border-bottom: 1px solid #d8d8d8;
+  margin: 0 20px 30px 20px;
+  align-items: center;
+  & .confirm__share-title {
+    margin: 20px 0 10px 0;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #54585a;
+  }
+  & .confirm__share-link {
+    width: 300px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    text-align: center;
+    color: #e17334;
+  }
+  & .button__share {
+    width: 181px;
+    height: 30px;
+    margin: 0 30px 30px 30px;
+    border-radius: 3px;
+    border: transparent;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+    background-color: #00a0f5;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  & .fa-twitter {
+    width: 18px;
+    height: 18px;
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: white;
   }
 }
