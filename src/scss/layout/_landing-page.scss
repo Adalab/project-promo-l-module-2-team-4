@@ -119,34 +119,3 @@
 .main__button--link {
   text-decoration: none;
 }
-.footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 110px;
-  width: 100%;
-  margin-bottom: 0;
-  background-color: #ffffff;
-  border: 1px #d8d8d8;
-}
-.footer__text {
-  width: 198px;
-  height: 20px;
-  margin: 0 0 12px;
-  opacity: 0.5;
-  font-family: "Open Sans", Arial, Helvetica;
-  font-size: 14px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.43;
-  letter-spacing: normal;
-  color: rgba(107, 107, 107, 0.5);
-}
-.footer__adalab-logo {
-  width: 103px;
-  height: 40px;
-  margin: 0;
-  padding-right: 10px;
-}
