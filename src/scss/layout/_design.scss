@@ -3,15 +3,10 @@
   height: 26px;
   color: #e17334;
   font-size: 22.4px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
   text-align: center;
 }
 .design__item-text {
-  text-transform: capitalize;
+  text-transform: uppercase;
   text-align: center;
   font-family: "Open Sans", Arial, Helvetica;
   font-size: 18px;
@@ -19,6 +14,14 @@
   color: #54585a;
 }
 
+.design__title{
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Open Sans", Arial, Helvetica;
+  font-size: 18px;
+  letter-spacing: normal;
+  color: #54585a
+}
 .design__square {
   &-label {
     display: flex;
