@@ -1,22 +1,44 @@
+.colapsable_form {
+  display: flex;
+  margin: 10px 20px 0;
+  justify-content: space-between;
+  & .left {
+    display: flex;
+  }
+  & .form__colap--icon {
+    color: orange;
+    font-size: 18px;
+    margin-right: 6px;
+  }
+  & .form__colap--h2 {
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+}
+
 form {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 400px;
-  width: 300px;
-  padding: 5px 20px;
+  height: 380px;
+  width: 281px;
+  margin: 0 auto 20px;
   line-height: 2;
-}
-
-button {
-  height: 20px;
-}
-
-.btn__submit--image {
-  height: 30px;
-  width: 140px;
-  background: #e17334;
-  border-radius: 3px;
-  border: none;
-  color: white;
+  &__input {
+    border: 1px solid #a2deaf;
+    line-height: 20px;
+    height: 30px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  & .btn__submit--image {
+    height: 30px;
+    width: 140px;
+    background: #e17334;
+    border-radius: 3px;
+    border: none;
+    color: white;
+    height: 30px;
+  }
 }
