@@ -10,10 +10,11 @@
 </div>
 
 <form
+class="form"
   method="post"
   action="https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/"
 >
-  <label for="name">Nombre completo</label>
+  <label class="form__label" for="name">Nombre completo</label>
   <input
     class="form__input"
     type="text"
@@ -22,7 +23,7 @@
     required
   />
 
-  <label for="job">Puesto</label>
+  <label class="form__label" for="job">Puesto</label>
   <input
     class="form__input"
     type="text"
@@ -32,7 +33,7 @@
     required
   />
 
-  <label for="photo">Imagen de perfil</label>
+  <label class="form__label" for="photo">Imagen de perfil</label>
   <button
     class="btn__submit--image"
     type="submit"
@@ -45,7 +46,7 @@
   </button>
   <div class="preview__image"></div>
 
-  <label for="email">Email</label>
+  <label class="form__label" for="email">Email</label>
   <input
     class="form__input"
     type="email"
@@ -55,7 +56,7 @@
     required
   />
 
-  <label for="phone">Telefono</label>
+  <label class="form__label" for="phone">Telefono</label>
   <input
     class="form__input"
     type="tel"
@@ -64,7 +65,7 @@
     placeholder="+34 666666666"
   />
 
-  <label for="linkedin">Linkedin</label>
+  <label class="form__label" for="linkedin">Linkedin</label>
   <input
     class="form__input"
     type="url"
@@ -74,7 +75,7 @@
     required
   />
 
-  <label for="github">Github</label>
+  <label class="form__label" for="github">Github</label>
   <input
     class="form__input"
     type="url"

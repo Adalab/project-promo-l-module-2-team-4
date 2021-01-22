@@ -1,3 +1,6 @@
+*{
+  box-sizing: border-box;
+}
 .colapsable_form {
   display: flex;
   margin: 10px 20px 0;
@@ -16,21 +19,18 @@
   }
 }
 
-form {
+.form {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 380px;
   width: 281px;
   margin: 0 auto 20px;
-  line-height: 2;
+  &__label{
+    padding:10px 0;
+  }
   &__input {
     border: 1px solid #a2deaf;
-    line-height: 20px;
     height: 30px;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
   }
   & .btn__submit--image {
     height: 30px;
