@@ -1,4 +1,5 @@
 .collapsable__header {
+  padding-top: 10px;
   margin: 0 20px 0 23px;
   border-top: 1px solid #d8d8d8;
   & .fa-share-alt {
@@ -21,7 +22,7 @@
     color: #54585a;
     margin-right: 100px;
   }
-  & .fa-chevron-down {
+  & .fa-angle-up {
     width: 16px;
     height: 18px;
     margin: 13px 0 33px 24px;
@@ -91,7 +92,7 @@
   & .button__share {
     width: 181px;
     height: 30px;
-    margin: 0 30px 30px 30px;
+    margin: 0 30px 30px 50px;
     border-radius: 3px;
     border: transparent;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
