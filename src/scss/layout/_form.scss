@@ -4,6 +4,8 @@
 .colapsable_form {
   display: flex;
   margin: 10px 20px 0;
+  border-top: 1px solid #d8d8d8;
+  font-family: "Open Sans", sans-serif;
   justify-content: space-between;
   & .left {
     display: flex;
@@ -16,6 +18,7 @@
   & .form__colap--h2 {
     font-size: 18px;
     text-transform: uppercase;
+    color:#54585a;
   }
 }
 
