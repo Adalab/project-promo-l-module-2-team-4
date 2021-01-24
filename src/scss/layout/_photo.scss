@@ -1,6 +1,10 @@
 .section__card {
   box-sizing: border-box;
-  background-image: linear-gradient(to bottom, #bfcdd0, #dde9ed);
+  background-image: linear-gradient(
+    to bottom,
+    $color-card-background-above,
+    $color-card-background-bellow
+  );
   padding: 30px 0 40px;
   display: flex;
   justify-content: center;
@@ -16,15 +20,11 @@
   width: 75px;
   border-radius: 15px;
   border: solid 1px #ffffff;
-  font-family: "Open Sans", sans-serif;
+  font-family: $font-second;
   background-color: transparent;
   text-transform: uppercase;
-  color: #54585a;
+  color: $color-cards-text;
 }
-
-/* .section__container {
-  margin: auto;
-} */
 
 .card {
   box-sizing: border-box;
@@ -32,13 +32,11 @@
   height: 329px;
   border-radius: 2px;
   box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.35);
-  background-color: #ffffff;
+  background-color: white;
   padding-top: 21px;
   padding-bottom: 12px;
-  font-family: "Montserrat", sans-serif;
-
+  font-family: $font-card-title;
   &__titles {
-    border-left: 5px solid #438792;
     padding-left: 15px;
     &--name {
       font-size: 18px;
@@ -48,7 +46,6 @@
       line-height: 1.11;
       letter-spacing: normal;
       margin-bottom: 4px;
-      color: #114e4e;
     }
     &--job {
       font-size: 16px;
@@ -58,7 +55,6 @@
       line-height: 1.25;
       letter-spacing: normal;
       margin-bottom: 10px;
-      color: #54585a;
     }
   }
   &__image {
@@ -78,21 +74,91 @@
     height: 32px;
     margin: 0 10px 0 0;
     border-radius: 16px;
-    border: solid 2px #a2deaf;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 }
 
-.link {
+.link__card {
   font-size: 18px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
-  color: #114e4e;
+}
+
+.fa-mobile {
+  font-size: 22px;
+}
+
+.fa-trash {
+  font-size: 12px;
+  margin: 0 8px 0 0;
+}
+
+//Pallete
+.palette1card {
+  & .card__titles {
+    border-left: 5px solid $color-pallete-1-color-2;
+    &--name {
+      color: $color-pallete-1-color-1;
+    }
+    &--job {
+      color: $color-cards-text;
+    }
+  }
+  .logo__list {
+    &--item {
+      border: solid 2px $color-pallete-1-color-3;
+    }
+  }
+
+  .link__card {
+    color: $color-pallete-1-color-1;
+  }
+}
+
+.palette2card {
+  & .card__titles {
+    border-left: 5px solid $color-pallete-2-color-2;
+    &--name {
+      color: $color-pallete-2-color-1;
+    }
+    &--job {
+      color: $color-cards-text;
+    }
+  }
+  .logo__list {
+    &--item {
+      border: solid 2px $color-pallete-2-color-3;
+    }
+  }
+
+  .link__card {
+    color: $color-pallete-2-color-1;
+  }
+}
+.palette3card {
+  & .card__titles {
+    border-left: 5px solid $color-pallete-3-color-2;
+    &--name {
+      color: $color-pallete-3-color-1;
+    }
+    &--job {
+      color: $color-cards-text;
+    }
+  }
+  .logo__list {
+    &--item {
+      border: solid 2px $color-pallete-3-color-3;
+    }
+  }
+
+  .link__card {
+    color: $color-pallete-3-color-1;
+  }
 }
 
 .fa-mobile {

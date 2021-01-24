@@ -6,7 +6,6 @@
   </div>
 
    <i class="fa fa-angle-up" aria-hidden="true"></i>
-
 </div>
 
 <form
@@ -33,18 +32,22 @@ class="form"
     required
   />
 
-  <label class="form__label" for="photo">Imagen de perfil</label>
-  <button
-    class="btn__submit--image"
-    type="submit"
-    value="Anadir imagen"
-    name="photo"
-    id="photo"
-    required
-  >
-    Añadir imagem
-  </button>
-  <div class="preview__image"></div>
+  <div class="form__display--image">
+    <div>
+      <label class="form__label" for="photo">Imagen de perfil</label>
+      <button
+        class="btn__submit--image"
+        type="submit"
+        value="Anadir imagen"
+        name="photo"
+        id="photo"
+        required
+      >
+        Añadir imagen
+      </button>
+    </div>
+    <div class="form__preview--image"></div>
+  </div>
 
   <label class="form__label" for="email">Email</label>
   <input
