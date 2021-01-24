@@ -1,0 +1,31 @@
+.collapsable__header {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+.fa-collapsable {
+  width: 16px;
+  height: 18px;
+  color: $color-icons;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  margin-right: 12px;
+}
+.tittle__collapsable {
+  text-transform: uppercase;
+  font-family: $font-second;
+  font-size: 18px;
+  color: $color-cards-text;
+  margin-right: 100px;
+}
+.fa-angle-up {
+  width: 16px;
+  height: 18px;
+  margin: 0 0 33px 24px;
+  color: $color-cards-text;
+}
