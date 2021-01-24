@@ -32,7 +32,7 @@
   }
   & .fa-angle-up {
     width: 16px;
-    height: 18px;
+    height: 20px;
     margin: 0 0 33px 24px;
     color: $color-cards-text;
   }
@@ -66,6 +66,9 @@
   }
   &:active {
     background-color: $color-creation-button-animation;
+  }
+  @media all and (min-width: 768px) {
+    margin: 0;
   }
 }
 .confirm__share {
@@ -131,5 +134,14 @@
     letter-spacing: normal;
     text-align: center;
     color: white;
+  }
+  @media all and (min-width: 768px) {
+    margin: 0;
+  }
+}
+.rectangle {
+  height: 30px;
+  @media all and (min-width: 768px) {
+    display: none;
   }
 }
