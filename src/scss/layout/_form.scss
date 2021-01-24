@@ -4,18 +4,27 @@
 .colapsable_form {
   display: flex;
   margin: 10px 20px 0;
+  border-top: 1px solid #d8d8d8;
   justify-content: space-between;
   & .left {
+    padding-top: 10px;
     display: flex;
   }
   & .fa__form {
-    color: #e17334;
+    color: $color-icons;
     font-size: 18px;
     margin-right: 6px;
   }
   & .form__colap--h2 {
+    font-family: $font-second;
     font-size: 18px;
     text-transform: uppercase;
+    color:$color-cards-text;
+  }
+  & .fa-angle-up{
+    padding-top: 10px;
+    color: $color-cards-text;
+    font-size: 18px;
   }
 }
 
@@ -26,10 +35,11 @@
   width: 281px;
   margin: 0 auto 20px;
   &__label{
+    display: block;
     padding:10px 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: $font-second;
     font-weight: 300;
-    color: #114e4e;
+    color: $color-subtitle-labels;
     font-size: 14px;
   }
   &__input {
@@ -39,10 +49,29 @@
   & .btn__submit--image {
     height: 30px;
     width: 140px;
-    background: #e17334;
+    background: $color-icons;
     border-radius: 3px;
     border: none;
     color: white;
     height: 30px;
   }
+}
+
+.form__display--image{
+  display: flex;
+  
+}
+.form__preview--image{
+  width:30px;
+  height: 30px;
+  border: 1px solid $color-form;
+  margin-top: 34px;
+  margin-left: 20px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: $color-form-placeholder;
+  opacity: 1; /* Firefox */
+  font-size: 14px;
+  font-family: $font-second;
 }

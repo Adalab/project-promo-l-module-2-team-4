@@ -1,26 +1,26 @@
 .fa-design {
   width: 32px;
   height: 26px;
-  color: #e17334;
+  color: $color-icons;
   font-size: 22.4px;
   text-align: center;
 }
 .design__item-text {
   text-transform: uppercase;
   text-align: center;
-  font-family: "Open Sans", Arial, Helvetica;
+  font-family: $font-second;
   font-size: 18px;
   letter-spacing: normal;
-  color: #54585a;
+  color: $color-cards-text;
 }
 
 .design__title{
   text-transform: uppercase;
   text-align: center;
-  font-family: "Open Sans", Arial, Helvetica;
+  font-family: $font-second;
   font-size: 18px;
   letter-spacing: normal;
-  color: #54585a
+  color: $color-cards-text;
 }
 .design__square {
   &-label {
@@ -44,36 +44,36 @@
 
 .palette-1 {
   .color-1 {
-    background-color: #114e4e;
+    background-color: $color-palette-1-color-1;
   }
   .color-2 {
-    background-color: #438792;
+    background-color: $color-palette-1-color-2;
   }
   .color-3 {
-    background-color: #a2deaf;
+    background-color: $color-palette-1-color-3;
   }
 }
 
 .palette-2 {
   .color-1 {
-    background-color: #420101;
+    background-color: $color-palette-2-color-2;
   }
   .color-2 {
-    background-color: #bd1010;
+    background-color: $color-palette-2-color-1;
   }
   .color-3 {
-    background-color: #e95626;
+    background-color:$color-palette-2-color-3;
   }
 }
 
 .palette-3 {
   .color-1 {
-    background-color: #3e5b65;
+    background-color: $color-palette-3-color-1;
   }
   .color-2 {
-    background-color: #eab052;
+    background-color: $color-palette-3-color-2;
   }
   .color-3 {
-    background-color: #a0c0cf;
+    background-color: $color-palette-3-color-3;
   }
 }
