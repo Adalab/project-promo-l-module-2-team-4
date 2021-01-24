@@ -101,9 +101,9 @@
 //Pallete
 .palette1card {
   & .card__titles {
-    border-left: 5px solid $color-pallete-1-color-2;
+    border-left: 5px solid $color-palette-1-color-2;
     &--name {
-      color: $color-pallete-1-color-1;
+      color: $color-palette-1-color-1;
     }
     &--job {
       color: $color-cards-text;
@@ -111,20 +111,20 @@
   }
   .logo__list {
     &--item {
-      border: solid 2px $color-pallete-1-color-3;
+      border: solid 2px $color-palette-1-color-3;
     }
   }
 
   .link__card {
-    color: $color-pallete-1-color-1;
+    color: $color-palette-1-color-1;
   }
 }
 
 .palette2card {
   & .card__titles {
-    border-left: 5px solid $color-pallete-2-color-2;
+    border-left: 5px solid $color-palette-2-color-2;
     &--name {
-      color: $color-pallete-2-color-1;
+      color: $color-palette-2-color-1;
     }
     &--job {
       color: $color-cards-text;
@@ -132,19 +132,19 @@
   }
   .logo__list {
     &--item {
-      border: solid 2px $color-pallete-2-color-3;
+      border: solid 2px $color-palette-2-color-3;
     }
   }
 
   .link__card {
-    color: $color-pallete-2-color-1;
+    color: $color-palette-2-color-1;
   }
 }
 .palette3card {
   & .card__titles {
-    border-left: 5px solid $color-pallete-3-color-2;
+    border-left: 5px solid $color-palette-3-color-2;
     &--name {
-      color: $color-pallete-3-color-1;
+      color: $color-palette-3-color-1;
     }
     &--job {
       color: $color-cards-text;
@@ -152,11 +152,11 @@
   }
   .logo__list {
     &--item {
-      border: solid 2px $color-pallete-3-color-3;
+      border: solid 2px $color-palette-3-color-3;
     }
   }
 
   .link__card {
-    color: $color-pallete-3-color-1;
+    color: $color-palette-3-color-1;
   }
 }
