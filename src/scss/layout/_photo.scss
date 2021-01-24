@@ -9,7 +9,9 @@
   display: flex;
   justify-content: center;
   @media all and (min-width: 768px) {
+    height: 100%;
     padding: 173px 0 260px;
+    border-radius: 6px;
   }
 }
 
