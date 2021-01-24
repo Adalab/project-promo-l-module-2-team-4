@@ -25,7 +25,7 @@
   }
   & .tittle-design {
     text-transform: uppercase;
-    font-family: "Open Sans", sans-serif;
+    font-family: $font-second;
     font-size: 18px;
     color: $color-cards-text;
     margin-right: 100px;
@@ -45,7 +45,7 @@
     box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
     background-color: $color-icons;
     text-transform: uppercase;
-    font-family: "Open Sans", sans-serif;
+    font-family: $font-second;
     font-size: 18px;
     color: white;
     display: flex;
@@ -78,7 +78,7 @@
   align-items: center;
   &--title {
     margin: 20px 0 5px 0;
-    font-family: "Open Sans", sans-serif;
+    font-family: $font-second;
     font-size: 18px;
     font-weight: 600;
     font-stretch: normal;
@@ -90,7 +90,7 @@
   }
   &--link {
     width: 300px;
-    font-family: "Open Sans", sans-serif;
+    font-family: $font-second;
     font-size: 12px;
     font-weight: 600;
     font-stretch: normal;
@@ -107,7 +107,7 @@
     border: transparent;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
     background-color: $color-twitter;
-    font-family: "Open Sans", sans-serif;
+    font-family: $font-second;
     font-size: 14px;
     font-weight: normal;
     font-stretch: normal;
