@@ -1,11 +1,19 @@
-.collapsable__header {
-  padding-top: 10px;
-  margin: 0 20px 0 23px;
-  border-top: 1px solid #d8d8d8;
+.share {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid $color-line;
+  margin: 0 20px 0 20px;
+  & .collapsable__header {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+  }
   & .fa-share-alt {
     width: 16px;
     height: 18px;
-    color: #e17334;
+    color: $color-icons;
     font-size: 18px;
     font-weight: normal;
     font-stretch: normal;
@@ -15,36 +23,35 @@
     text-align: center;
     margin-right: 12px;
   }
-  & .tittle-design {
+  & .tittle__share {
     text-transform: uppercase;
-    font-family: "Open Sans", sans-serif;
+    font-family: $font-second;
     font-size: 18px;
-    color: #54585a;
+    color: $color-cards-text;
     margin-right: 100px;
   }
   & .fa-angle-up {
     width: 16px;
     height: 18px;
-    margin: 13px 0 33px 24px;
-    color: #54585a;
+    margin: 0 0 33px 24px;
+    color: $color-cards-text;
   }
-}
-
-.button__create {
-  width: 199px;
-  height: 50px;
-  margin: 0 60px 30px 60px;
-  border: transparent;
-  border-radius: 12px;
-  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
-  background-color: #e17334;
-  text-transform: uppercase;
-  font-family: "Open Sans", sans-serif;
-  font-size: 18px;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  & .button__create {
+    width: 199px;
+    height: 50px;
+    margin-bottom: 30px;
+    border: transparent;
+    border-radius: 12px;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+    background-color: $color-icons;
+    text-transform: uppercase;
+    font-family: $font-second;
+    font-size: 18px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   & .fa-address-card-o {
     width: 25px;
     height: 22px;
@@ -58,17 +65,20 @@
     margin-right: 9px;
   }
   &:active {
-    background-color: #d5d5d5;
+    background-color: $color-creation-button-animation;
   }
 }
 .confirm__share {
-  border-top: 1px solid #d8d8d8;
-  border-bottom: 1px solid #d8d8d8;
-  margin: 0 20px 30px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 20px 0 20px;
+  border-top: 1px solid $color-line;
+  border-bottom: 1px solid $color-line;
   align-items: center;
-  & .confirm__share-title {
-    margin: 20px 0 10px 0;
-    font-family: "Open Sans", sans-serif;
+  &--title {
+    margin: 20px 0 5px 0;
+    font-family: $font-second;
     font-size: 18px;
     font-weight: 600;
     font-stretch: normal;
@@ -76,28 +86,28 @@
     line-height: normal;
     letter-spacing: normal;
     text-align: center;
-    color: #54585a;
+    color: $color-cards-text;
   }
-  & .confirm__share-link {
+  &--link {
     width: 300px;
-    font-family: "Open Sans", sans-serif;
+    font-family: $font-second;
     font-size: 12px;
     font-weight: 600;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
     text-align: center;
-    color: #e17334;
+    color: $color-icons;
   }
   & .button__share {
     width: 181px;
     height: 30px;
-    margin: 0 30px 30px 50px;
+    margin: 10px 0 30px 0;
     border-radius: 3px;
     border: transparent;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
-    background-color: #00a0f5;
-    font-family: "Open Sans", sans-serif;
+    background-color: $color-twitter;
+    font-family: $font-second;
     font-size: 14px;
     font-weight: normal;
     font-stretch: normal;
