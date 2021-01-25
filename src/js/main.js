@@ -1,3 +1,4 @@
+/* eslint-disable quotes */
 "use strict";
 
 const nameElement = document.querySelector(".js-name");
