@@ -1,9 +1,18 @@
-.fa-design {
-  width: 32px;
-  height: 26px;
-  color: $color-icons;
-  font-size: 22.4px;
-  text-align: center;
+.collapsable_wrap{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid $color-line;
+  margin: 0 20px 0 20px;
+  @media all and (min-width: 768px) {
+    margin: 0;
+  }
+}
+
+.collapsable__content {
+  margin-left: 39px;
+  margin-right: 40px;
 }
 .design__item-text {
   text-transform: uppercase;
@@ -42,6 +51,13 @@
   }
 }
 
+
+.palette-1,
+.palette-2,
+.palette-3 {
+  display: flex;
+  margin-bottom: 5px;
+}
 .palette-1 {
   .color-1 {
     background-color: $color-palette-1-color-1;
