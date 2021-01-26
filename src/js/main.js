@@ -1,4 +1,3 @@
-/* eslint-disable quotes */
 "use strict";
 
 const nameElement = document.querySelector(".js-name");
@@ -13,7 +12,7 @@ function handleName(event) {
     namePreviewElement.innerHTML = "Nombre Apellido";
   } else {
     namePreviewElement.innerHTML = nameValue;
-    console.log(namePreviewElement.href);
+    console.log(namePreviewElement.innerHTML);
   }
 }
 function handleEmail(event) {
