@@ -1,3 +1,15 @@
+.collapsable__wrap{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid $color-line;
+  margin: 0 20px 0 20px;
+  @media all and (min-width: 768px) {
+    margin: 0;
+  }
+}
+
 .collapsable__content {
   margin-left: 39px;
   margin-right: 40px;
