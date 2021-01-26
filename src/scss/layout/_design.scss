@@ -14,18 +14,9 @@
   margin-left: 39px;
   margin-right: 40px;
 }
-.design__item-text {
+.design__title {
   text-transform: uppercase;
-  text-align: center;
-  font-family: $font-second;
-  font-size: 18px;
-  letter-spacing: normal;
-  color: $color-cards-text;
-}
-
-.design__title{
-  text-transform: uppercase;
-  text-align: center;
+  text-align: left;
   font-family: $font-second;
   font-size: 18px;
   letter-spacing: normal;
@@ -47,10 +38,9 @@
     width: 30px;
     height: 25px;
     overflow: hidden;
-    color: rgba($color: white, $alpha: 0);
+    color: rgba($color: $color-line, $alpha: 0);
   }
 }
-
 
 .palette-1,
 .palette-2,
@@ -72,13 +62,13 @@
 
 .palette-2 {
   .color-1 {
-    background-color: $color-palette-2-color-2;
-  }
-  .color-2 {
     background-color: $color-palette-2-color-1;
   }
+  .color-2 {
+    background-color: $color-palette-2-color-2;
+  }
   .color-3 {
-    background-color:$color-palette-2-color-3;
+    background-color: $color-palette-2-color-3;
   }
 }
 
