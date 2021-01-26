@@ -1,4 +1,8 @@
+.collapsable__content{
 
+  margin-left: 39px;
+  margin-right: 40px;
+}
 .design__title{
   text-transform: uppercase;
   text-align: left;
@@ -6,7 +10,6 @@
   font-size: 18px;
   letter-spacing: normal;
   color: $color-cards-text;
-  margin-left: 50px;
 }
 .design__square {
   &-label {
