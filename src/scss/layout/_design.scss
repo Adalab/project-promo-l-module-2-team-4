@@ -1,9 +1,8 @@
-.collapsable__content{
-
+.collapsable__content {
   margin-left: 39px;
   margin-right: 40px;
 }
-.design__title{
+.design__title {
   text-transform: uppercase;
   text-align: left;
   font-family: $font-second;
@@ -31,10 +30,11 @@
   }
 }
 
-.palette-1, .palette-2, .palette-3{ 
+.palette-1,
+.palette-2,
+.palette-3 {
   display: flex;
   margin-bottom: 5px;
- 
 }
 .palette-1 {
   .color-1 {
@@ -56,7 +56,7 @@
     background-color: $color-palette-2-color-2;
   }
   .color-3 {
-    background-color:$color-palette-2-color-3;
+    background-color: $color-palette-2-color-3;
   }
 }
 
