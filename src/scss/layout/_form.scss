@@ -1,42 +1,48 @@
-*{
+* {
   box-sizing: border-box;
 }
 .colapsable_form {
   display: flex;
-  margin: 10px 20px 0;
-  border-top: 1px solid #d8d8d8;
-  justify-content: space-between;
-  & .left {
-    padding-top: 10px;
-    display: flex;
-  }
-  & .fa__form {
-    color: $color-icons;
-    font-size: 18px;
-    margin-right: 6px;
-  }
-  & .form__colap--h2 {
-    font-family: $font-second;
-    font-size: 18px;
-    text-transform: uppercase;
-    color:$color-cards-text;
-  }
-  & .fa-angle-up{
-    padding-top: 10px;
-    color: $color-cards-text;
-    font-size: 18px;
-  }
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid $color-line;
+  margin: 0 20px 0 20px;
 }
+// display: flex;
+// margin: 10px 20px 0;
+// border-top: 1px solid #d8d8d8;
+// justify-content: space-between;
+//   & .left {
+//     padding-top: 10px;
+//     display: flex;
+//   }
+//   & .fa__form {
+//     color: $color-icons;
+//     font-size: 18px;
+//     margin-right: 6px;
+//   }
+//   & .form__colap--h2 {
+//     font-family: $font-second;
+//     font-size: 18px;
+//     text-transform: uppercase;
+//     color:$color-cards-text;
+//   }
+//   & .fa-angle-up{
+//     padding-top: 10px;
+//     color: $color-cards-text;
+//     font-size: 18px;
+//   }
+// }
 
 .form {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 281px;
-  margin: 0 auto 20px;
-  &__label{
+  margin: 0 19px 20px 20px;
+  &__label {
     display: block;
-    padding:10px 0;
+    padding: 10px 0;
     font-family: $font-second;
     font-weight: 300;
     color: $color-subtitle-labels;
@@ -55,21 +61,24 @@
     color: white;
     height: 30px;
   }
+  @media all and (min-width: 768px) {
+    margin: 0;
+  }
 }
 
-.form__display--image{
+.form__display--image {
   display: flex;
-  
 }
-.form__preview--image{
-  width:30px;
+.form__preview--image {
+  width: 30px;
   height: 30px;
   border: 1px solid $color-form;
   margin-top: 34px;
   margin-left: 20px;
 }
 
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: $color-form-placeholder;
   opacity: 1; /* Firefox */
   font-size: 14px;

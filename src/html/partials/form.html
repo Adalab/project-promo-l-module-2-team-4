@@ -1,54 +1,27 @@
-<!-- <div class="colapsable_form">
-  <div class="left">
+<div class="colapsable_form">
+  <!-- <div class="left">
     <span class="fa__form"
       ><i class="fa fa-keyboard-o" aria-hidden="true"></i
     ></span>
     <h2 class="form__colap--h2">Rellena</h2>
   </div>
-  <i class="fa fa-angle-up" aria-hidden="true"></i>
-</div> -->
+  <i class="fa fa-angle-up" aria-hidden="true"></i> -->
 
-<include
-  src="./collapsable-header.html"
-  collapsableIcon="fa-keyboard-o"
-  collapsableTitle="Rellena"
-></include>
 
-<form
-  class="form"
-  method="post"
-  action="https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/"
->
+  <include src="./collapsable-header.html" collapsableIcon="fa-keyboard-o" collapsableTitle="Rellena"></include>
+</div>
+
+<form class="form" method="post" action="https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/">
   <label class="form__label" for="name">Nombre completo</label>
-  <input
-    class="form__input js-name"
-    type="text"
-    name="name"
-    placeholder="Nombre completo"
-    required
-  />
+  <input class="form__input js-name" type="text" name="name" placeholder="Nombre completo" required />
 
   <label class="form__label" for="job">Puesto</label>
-  <input
-    class="form__input"
-    type="text"
-    name="job"
-    id="job"
-    placeholder="Profesión"
-    required
-  />
+  <input class="form__input" type="text" name="job" id="job" placeholder="Profesión" required />
 
   <div class="form__display--image">
     <div>
       <label class="form__label" for="photo">Imagen de perfil</label>
-      <button
-        class="btn__submit--image"
-        type="submit"
-        value="Anadir imagen"
-        name="photo"
-        id="photo"
-        required
-      >
+      <button class="btn__submit--image" type="submit" value="Anadir imagen" name="photo" id="photo" required>
         Añadir imagen
       </button>
     </div>
@@ -56,41 +29,16 @@
   </div>
 
   <label class="form__label" for="email">Email</label>
-  <input
-    class="form__input js-email"
-    type="email"
-    name="email"
-    id="email"
-    placeholder="maria.garcia@example.com"
-    required
-  />
+  <input class="form__input js-email" type="email" name="email" id="email" placeholder="maria.garcia@example.com"
+    required />
 
   <label class="form__label" for="phone">Telefono</label>
-  <input
-    class="form__input"
-    type="tel"
-    name="phone"
-    id="phone"
-    placeholder="+34 666666666"
-  />
+  <input class="form__input" type="tel" name="phone" id="phone" placeholder="+34 666666666" />
 
   <label class="form__label" for="linkedin">Linkedin</label>
-  <input
-    class="form__input"
-    type="url"
-    name="linkedin"
-    id="linkedin"
-    placeholder="Nombre de usuario de LinkedIn"
-    required
-  />
+  <input class="form__input" type="url" name="linkedin" id="linkedin" placeholder="Nombre de usuario de LinkedIn"
+    required />
 
   <label class="form__label" for="github">Github</label>
-  <input
-    class="form__input"
-    type="url"
-    name="github"
-    id="github"
-    placeholder="Nombre de usuario de GitHub"
-    required
-  />
+  <input class="form__input" type="url" name="github" id="github" placeholder="Nombre de usuario de GitHub" required />
 </form>
