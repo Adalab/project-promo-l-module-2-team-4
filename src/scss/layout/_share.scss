@@ -5,37 +5,38 @@
   align-items: center;
   border-top: 1px solid $color-line;
   margin: 0 20px 0 20px;
-  & .collapsable__header {
-    display: flex;
-    justify-content: center;
-    padding-top: 10px;
-  }
-  & .fa-share-alt {
-    width: 16px;
-    height: 18px;
-    color: $color-icons;
-    font-size: 18px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: center;
-    margin-right: 12px;
-  }
-  & .tittle__share {
-    text-transform: uppercase;
-    font-family: $font-second;
-    font-size: 18px;
-    color: $color-cards-text;
-    margin-right: 100px;
-  }
-  & .fa-angle-up {
-    width: 16px;
-    height: 18px;
-    margin: 0 0 33px 24px;
-    color: $color-cards-text;
-  }
+  // & .collapsable__header {
+  //   display: flex;
+  //   justify-content: center;
+  //   padding-top: 10px;
+  //   width: 100%;
+  // }
+  // & .fa-share-alt {
+  //   width: 16px;
+  //   height: 18px;
+  //   color: $color-icons;
+  //   font-size: 18px;
+  //   font-weight: normal;
+  //   font-stretch: normal;
+  //   font-style: normal;
+  //   line-height: normal;
+  //   letter-spacing: normal;
+  //   text-align: center;
+  //   margin-right: 12px;
+  // }
+  // & .tittle__collapsable {
+  //   text-transform: uppercase;
+  //   font-family: $font-second;
+  //   font-size: 18px;
+  //   color: $color-cards-text;
+  //   // margin-right: 100px;
+  // }
+  // & .fa-angle-up {
+  //   width: 16px;
+  //   height: 20px;
+  //   // margin: 0 0 33px 24px;
+  //   color: $color-cards-text;
+  // }
   & .button__create {
     width: 199px;
     height: 50px;
@@ -66,6 +67,9 @@
   }
   &:active {
     background-color: $color-creation-button-animation;
+  }
+  @media all and (min-width: 768px) {
+    margin: 0;
   }
 }
 .confirm__share {
@@ -131,5 +135,14 @@
     letter-spacing: normal;
     text-align: center;
     color: white;
+  }
+  @media all and (min-width: 768px) {
+    margin: 0;
+  }
+}
+.rectangle {
+  height: 30px;
+  @media all and (min-width: 768px) {
+    display: none;
   }
 }

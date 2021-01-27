@@ -1,22 +1,22 @@
-.fa-design {
-  width: 32px;
-  height: 26px;
-  color: $color-icons;
-  font-size: 22.4px;
-  text-align: center;
-}
-.design__item-text {
-  text-transform: uppercase;
-  text-align: center;
-  font-family: $font-second;
-  font-size: 18px;
-  letter-spacing: normal;
-  color: $color-cards-text;
+.collapsable__wrap{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px 0 20px;
+  @media all and (min-width: 768px) {
+    margin: 0;
+  }
 }
 
-.design__title{
+.collapsable__content {
+  margin-left: 39px;
+  margin-right: 40px;
+  margin-bottom: 15px;
+}
+.design__title {
   text-transform: uppercase;
-  text-align: center;
+  text-align: left;
   font-family: $font-second;
   font-size: 18px;
   letter-spacing: normal;
@@ -38,10 +38,16 @@
     width: 30px;
     height: 25px;
     overflow: hidden;
-    color: rgba($color: white, $alpha: 0);
+    color: rgba($color: $color-line, $alpha: 0);
   }
 }
 
+.palette-1,
+.palette-2,
+.palette-3 {
+  display: flex;
+  margin-bottom: 5px;
+}
 .palette-1 {
   .color-1 {
     background-color: $color-palette-1-color-1;
@@ -56,13 +62,13 @@
 
 .palette-2 {
   .color-1 {
-    background-color: $color-palette-2-color-2;
-  }
-  .color-2 {
     background-color: $color-palette-2-color-1;
   }
+  .color-2 {
+    background-color: $color-palette-2-color-2;
+  }
   .color-3 {
-    background-color:$color-palette-2-color-3;
+    background-color: $color-palette-2-color-3;
   }
 }
 
