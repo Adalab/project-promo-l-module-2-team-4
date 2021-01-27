@@ -1,18 +1,20 @@
 .main {
   display: flex;
+  box-sizing: border-box;
   width: 100%;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   background-color: $color-primary-background;
   border: 1px #d8d8d8;
   box-sizing: border-box;
-  padding-top: 50px;
+  height: calc(100vh - 110px);
+  /*   padding-top: 50px; */
   @media all and (min-width: 768px) {
-    padding-top: 350px;
-    padding-bottom: 59px;
-    height: 94vh;
-  }
+    /*     padding-top: 350px; */
+    /*     padding-bottom: 59px; */
+    height: calc(100vh - 60px);
+  } /*  */
   &__logo {
     width: 250px;
     height: 63px;
@@ -111,13 +113,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 38px 75px 0 65px;
+    margin: 38px 75px 30px 65px;
     padding: 10px 10px;
     border-radius: 21px;
     background-color: $color-landging-button;
     border: 0;
     @media all and (min-width: 768px) {
-      margin: 186px 145px 0;
+      margin: 186px 145px 60px;
       padding: 10px 20.5px 10px 19.5px;
     }
     &--text {
