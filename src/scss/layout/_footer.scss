@@ -5,14 +5,14 @@
   align-items: center;
   box-sizing: border-box;
   width: 100%;
-  height: 19.35vh;
+  height: 110px;
   margin-bottom: 0;
   background-color: #ffffff;
   border-top: 1px #d8d8d8 solid;
   @media all and (min-width: 768px) {
     flex-direction: row;
     justify-content: space-between;
-    height: 5.8vh;
+    height: 6vh;
     padding-top: 5px;
   }
   &__text {
