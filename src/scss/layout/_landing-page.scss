@@ -1,4 +1,4 @@
-.main {
+.main-landing {
   display: flex;
   box-sizing: border-box;
   width: 100%;
@@ -9,12 +9,9 @@
   border: 1px #d8d8d8;
   box-sizing: border-box;
   height: calc(100vh - 110px);
-  /*   padding-top: 50px; */
   @media all and (min-width: 768px) {
-    /*     padding-top: 350px; */
-    /*     padding-bottom: 59px; */
     height: calc(100vh - 60px);
-  } /*  */
+  }
   &__logo {
     width: 250px;
     height: 63px;
@@ -107,7 +104,8 @@
       }
     }
   }
-  &__button {
+  &__link {
+    text-decoration: none;
     width: 129px;
     height: 42px;
     display: flex;
@@ -118,26 +116,19 @@
     border-radius: 21px;
     background-color: $color-landging-button;
     border: 0;
+    text-transform: uppercase;
+    font-family: $font-second;
+    font-size: 16px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
     @media all and (min-width: 768px) {
       margin: 186px 145px 60px;
       padding: 10px 20.5px 10px 19.5px;
-    }
-    &--text {
-      width: 89px;
-      height: 22px;
-      text-transform: uppercase;
-      font-family: $font-second;
-      font-size: 16px;
-      font-weight: 600;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: normal;
-      letter-spacing: normal;
-      text-align: center;
-      color: #ffffff;
-    }
-    &--link {
-      text-decoration: none;
     }
   }
 }
