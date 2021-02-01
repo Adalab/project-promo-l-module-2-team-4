@@ -10,8 +10,6 @@ function handleName(event) {
   const nameValue = event.target.value;
   if (nameValue === "") {
     namePreviewElement.innerHTML = "Nombre Apellido";
-  } else {
-    namePreviewElement.innerHTML = nameValue;
     console.log(namePreviewElement.innerHTML);
   }
 }
