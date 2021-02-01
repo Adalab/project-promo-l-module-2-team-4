@@ -41,9 +41,12 @@
 
     <div class="form__display--image">
       <div>
-        <label class="form__label" for="photo">Imagen de perfil</label>
+        <label class="form__label js-label-image" for="photo"
+          >Imagen de perfil</label
+        >
+        <!-- getImage -->
         <button
-          class="btn__submit--image"
+          class="btn__submit--image js__profile-trigger"
           type="submit"
           value="Anadir imagen"
           name="photo"
@@ -52,10 +55,15 @@
         >
           Añadir imagen
         </button>
+        <input
+          type="file"
+          name=""
+          class="btn__submit--image action__hiddenField js__profile-upload-btn"
+        />
       </div>
-      <div class="form__preview--image"></div>
+      <div class="form__preview--image js__profile-preview"></div>
     </div>
-    <input type="file" />
+    <!--    <input type="file" name="" class="js__profile-upload" /> -->
 
     <label class="form__label" for="email">Email</label>
     <input
