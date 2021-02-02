@@ -1,4 +1,4 @@
-.collapsable__wrap{
+.collapsable__wrap {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -42,13 +42,13 @@
   }
 }
 
-.palette-1,
-.palette-2,
-.palette-3 {
+.palette-1-election,
+.palette-2-election,
+.palette-3-election {
   display: flex;
   margin-bottom: 5px;
 }
-.palette-1 {
+.palette-1-election {
   .color-1 {
     background-color: $color-palette-1-color-1;
   }
@@ -60,7 +60,7 @@
   }
 }
 
-.palette-2 {
+.palette-2-election {
   .color-1 {
     background-color: $color-palette-2-color-1;
   }
@@ -72,7 +72,7 @@
   }
 }
 
-.palette-3 {
+.palette-3-election {
   .color-1 {
     background-color: $color-palette-3-color-1;
   }

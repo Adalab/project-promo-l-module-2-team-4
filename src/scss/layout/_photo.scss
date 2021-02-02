@@ -64,6 +64,11 @@
     box-sizing: border-box;
     width: 240px;
     height: 200px;
+    //getImage
+    background-image: url("../images/lee.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 .logo__list {
@@ -101,7 +106,7 @@
 }
 
 //Pallete
-.palette1card {
+.palette-1 {
   & .card__titles {
     border-left: 5px solid $color-palette-1-color-2;
     &--name {
@@ -122,7 +127,7 @@
   }
 }
 
-.palette2card {
+.palette-2 {
   & .card__titles {
     border-left: 5px solid $color-palette-2-color-2;
     &--name {
@@ -142,7 +147,7 @@
     color: $color-palette-2-color-1;
   }
 }
-.palette3card {
+.palette-3 {
   & .card__titles {
     border-left: 5px solid $color-palette-3-color-2;
     &--name {
