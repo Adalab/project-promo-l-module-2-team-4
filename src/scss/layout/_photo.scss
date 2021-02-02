@@ -64,6 +64,11 @@
     box-sizing: border-box;
     width: 240px;
     height: 200px;
+    //getImage
+    background-image: url("../images/lee.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 .logo__list {

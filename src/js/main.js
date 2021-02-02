@@ -1,4 +1,4 @@
-// "use strict";
+/* "use strict";
 
 // const nameElement = document.querySelector(".js-name");
 // const namePreviewElement = document.querySelector(".js-preview-name");
@@ -29,5 +29,5 @@
 //   }
 // }
 
-// nameElement.addEventListener("keyup", handleName);
-// emailElement.addEventListener("keyup", handleEmail);
+nameElement.addEventListener("keyup", handleName);
+emailElement.addEventListener("keyup", handleEmail); */
