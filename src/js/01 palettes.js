@@ -15,3 +15,4 @@ for (const paletteElement of paletteInputElement) {
   paletteElement.addEventListener('change', handlePalette);
 }
 handlePalette();
+
