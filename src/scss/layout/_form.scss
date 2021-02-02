@@ -37,7 +37,11 @@
 //     font-size: 18px;
 //   }
 // }
-
+.action__hiddenField {
+  /* Ocultamos el input de tipo "file" porque no podemos 
+  darle los estilos que queremos */
+  display: none;
+}
 .form {
   display: flex;
   flex-direction: column;
@@ -79,6 +83,10 @@
   border: 1px solid $color-form;
   margin-top: 34px;
   margin-left: 20px;
+  //getImage
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 ::placeholder {
