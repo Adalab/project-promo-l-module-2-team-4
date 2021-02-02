@@ -10,8 +10,7 @@ const emailElement = document.querySelector('.js-email');
 let emailPreviewElement = document.querySelector('.js-preview-email');
 
 const telElement = document.querySelector('.js-tel');
-let telPreviewElement = document.querySelector('js-preview-tel');
-
+let telPreviewElement = document.querySelector('.js-preview-tel');
 
 function handleName(event) {
   const nameValue = event.target.value;
@@ -27,11 +26,10 @@ function handleJob(event) {
   const jobValue = event.target.value;
   if (jobValue === '') {
     jobPreviewElement.innerHTML = 'Front-End Developer';
-  } else { 
+  } else {
     jobPreviewElement.innerHTML = jobValue;
   }
 }
-
 
 function handleEmail(event) {
   const emailValue = event.target.value;
@@ -46,10 +44,15 @@ function handleEmail(event) {
 
 function handleTel(event) {
   const telValue = event.target.value;
+  console.log(telValue);
   if (telValue === '') {
-    telPreviewElement.href = '+34 666666666';
-  }else {
-    telPreviewElement.href = telValue;
+    console.log(telValue);
+    telPreviewElement.href = 'tel:+34 666666666';
+  } else {
+    console.log(telValue);
+    telPreviewElement.href = `tel:${telValue}`;
+    telPreviewElement.title = `tel:${telValue}`;
+    console.log(telPreviewElement.href);
   }
 }
 
