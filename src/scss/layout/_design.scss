@@ -8,15 +8,16 @@
     margin: 0;
   }
 }
-.collapsable--close {
+/* .collapsable--close {
   .hidden__container {
     display:none;
   }
   .fa-angle-up {
     transform: rotate(180deg);
   }
-}
-.collapsable__content {
+} */
+.collapsable__content--design {
+  width: 100%;
   margin-left: 39px;
   margin-right: 40px;
   margin-bottom: 15px;

@@ -42,6 +42,11 @@
   darle los estilos que queremos */
   display: none;
 }
+
+//added after collapsable js effect
+.collapsable__content--form {
+  width: 100%;
+}
 .form {
   display: flex;
   flex-direction: column;

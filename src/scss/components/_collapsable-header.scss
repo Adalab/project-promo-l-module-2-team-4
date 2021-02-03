@@ -5,7 +5,6 @@
   padding-top: 10px;
   margin: 0 20px 0 20px;
   cursor: pointer;
-
 }
 .fa-collapsable {
   width: 16px;
@@ -33,11 +32,29 @@
   margin: 0 0 33px 0;
   color: $color-cards-text;
 }
-// .collapsable--close {
-//   .hidden__container {
-//     display:none;
-//   }
-//   .fa-angle-up {
-//     transform: rotate(180deg);
-//   }
-// }
+.collapsable {
+  .collapsable__content {
+    max-height: 100vh;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+  }
+}
+
+.collapsable--close {
+  .fa-angle-up {
+    transform: rotate(180deg);
+  }
+
+  .collapsable__content {
+    max-height: 0;
+  }
+}
+
+/* .collapsable--close {
+  .hidden__container {
+    display: none;
+  }
+  .fa-angle-up {
+    transform: rotate(180deg);
+  }
+} */

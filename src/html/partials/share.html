@@ -1,16 +1,24 @@
-<section class="share js-collapsable">
-   
-    <include src="./collapsable-header.html" collapsableIcon="fa-share-alt" collapsableTitle="Comparte"></include>
+<section class="share collapsable js-collapsable collapsable--close">
+  <include
+    src="./collapsable-header.html"
+    collapsableIcon="fa-share-alt"
+    collapsableTitle="Comparte"
+  ></include>
+  <div class="collapsable__content share-divs">
     <button class="button__create">
-        <i class="fa fa-address-card-o" aria-hidden="true"></i>Crear tarjeta
+      <i class="fa fa-address-card-o" aria-hidden="true"></i>Crear tarjeta
     </button>
-</section>
-<div class="confirm__share">
-    <p class="confirm__share--title">La tarjeta ha sido creada:</p>
-    <a class="confirm__share--link"
-        href="https://awesome-profile-card.com?id=A456DF0001">https://awesome-profile-card.com?id=A456DF0001</a>
-    <button class="button__share">
+    <div class="confirm__share">
+      <p class="confirm__share--title">La tarjeta ha sido creada:</p>
+      <a
+        class="confirm__share--link"
+        href="https://awesome-profile-card.com?id=A456DF0001"
+        >https://awesome-profile-card.com?id=A456DF0001</a
+      >
+      <button class="button__share">
         <i class="fa fa-twitter" aria-hidden="true"></i>Compartir en twitter
-    </button>
-</div>
-<div class="rectangle"></div>
+      </button>
+    </div>
+    <div class="rectangle"></div>
+  </div>
+</section>
