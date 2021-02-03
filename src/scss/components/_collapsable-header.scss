@@ -4,6 +4,8 @@
   justify-content: space-between;
   padding-top: 10px;
   margin: 0 20px 0 20px;
+  cursor: pointer;
+
 }
 .fa-collapsable {
   width: 16px;
@@ -31,3 +33,11 @@
   margin: 0 0 33px 0;
   color: $color-cards-text;
 }
+// .collapsable--close {
+//   .hidden__container {
+//     display:none;
+//   }
+//   .fa-angle-up {
+//     transform: rotate(180deg);
+//   }
+// }
