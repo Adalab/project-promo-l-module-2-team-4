@@ -73,6 +73,7 @@
   }
 }
 .confirm__share {
+  width: 95vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -138,6 +139,7 @@
   }
   @media all and (min-width: 768px) {
     margin: 0;
+    width: 50vw;
   }
 }
 .rectangle {
