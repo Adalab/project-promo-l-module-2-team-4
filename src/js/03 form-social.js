@@ -12,7 +12,7 @@ function handleLinkedin(){
     linkedinPreviewElement.href = '';
   }
   else {
-    linkedinPreviewElement.href = linkedinValue;
+    linkedinPreviewElement.href = `https://www.linkedin.com/in/${linkedinValue}/`;
     linkedinPreviewElement.target= '_blank';
     linkedinPreviewElement.title = linkedinValue;
   }
@@ -24,7 +24,7 @@ function handleGithub(){
     githubPreviewElement.href='';
   }
   else {
-    githubPreviewElement.href= githubValue;
+    githubPreviewElement.href= `https://github.com/${githubValue}`;
     githubPreviewElement.target= '_blank';
     githubPreviewElement.title= githubValue;
   }
