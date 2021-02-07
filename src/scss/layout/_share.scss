@@ -73,6 +73,7 @@
   }
 }
 .confirm__share {
+  width: 95vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -80,6 +81,7 @@
   border-top: 1px solid $color-line;
   border-bottom: 1px solid $color-line;
   align-items: center;
+  display: none;
   &--title {
     margin: 20px 0 5px 0;
     font-family: $font-second;
@@ -138,6 +140,7 @@
   }
   @media all and (min-width: 768px) {
     margin: 0;
+    width: 50vw;
   }
 }
 .rectangle {
