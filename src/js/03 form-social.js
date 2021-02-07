@@ -10,10 +10,10 @@ function handleLinkedin(){
   const linkedinValue = linkedinElement.value;
   if (linkedinValue === ''){
     linkedinPreviewElement.href = '';
-    console.log(linkedinValue);
   }
   else {
-    linkedinPreviewElement.href = linkedinValue;
+    linkedinPreviewElement.href = `https://www.linkedin.com/in/${linkedinValue}/`;
+    linkedinPreviewElement.target= '_blank';
     linkedinPreviewElement.title = linkedinValue;
   }
 }
@@ -22,10 +22,10 @@ function handleGithub(){
   const githubValue = githubElement.value;
   if (githubValue === '') {
     githubPreviewElement.href='';
-    console.log(githubValue);
   }
   else {
-    githubPreviewElement.href= githubValue;
+    githubPreviewElement.href= `https://github.com/${githubValue}`;
+    githubPreviewElement.target= '_blank';
     githubPreviewElement.title= githubValue;
   }
 
