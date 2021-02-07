@@ -60,3 +60,4 @@ nameElement.addEventListener('keyup', handleName);
 jobElement.addEventListener('keyup', handleJob);
 emailElement.addEventListener('keyup', handleEmail);
 telElement.addEventListener('keyup', handleTel);
+

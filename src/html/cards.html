@@ -29,18 +29,20 @@
   </head>
 
   <body class="card-page">
-    <include src="./partials/header-cards.html"></include>
-    <main class="main">
-      <div class="photo-container">
-        <include src="./partials/photo.html"></include>
-      </div>
-      <div class="collapsable-container">
-        <include src="./partials/design.html"></include>
-        <include src="./partials/form.html"></include>
-        <include src="./partials/share.html"></include>
-      </div>
-    </main>
-    <include src="./partials/footer.html"></include>
-    <script src="./assets/js/main.js"></script>
+    <div class="page__column">
+      <include src="./partials/header-cards.html"></include>
+      <main class="main">
+        <div class="photo-container">
+          <include src="./partials/photo.html"></include>
+        </div>
+        <div class="collapsable-container">
+          <include src="./partials/design.html"></include>
+          <include src="./partials/form.html"></include>
+          <include src="./partials/share.html"></include>
+        </div>
+      </main>
+      <include src="./partials/footer.html"></include>
+      <script src="./assets/js/main.js"></script>
+    </div>
   </body>
 </html>
