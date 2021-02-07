@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="icon" href="assets/images/apple-touch-icon.png"/>
+    
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css"
@@ -29,68 +32,65 @@
   </head>
 
   <body class="card-page">
-    <header class="header__cards">
-      <div class="header__cards--container">
-        <a class="header__cards--link" href="index.html" alt="landing page link"
-          ><img
-            class="header__cards--photo"
-            src="./assets/images/logo-awesome-profile-cards.svg"
-            title="awesome-profile cards logo"
-        /></a>
-      </div>
-    </header>
+    <div class="page__column">
+      <header class="header__cards">
+        <div class="header__cards--container">
+          <a class="header__cards--link" href="index.html" alt="landing page link"
+            ><img
+              class="header__cards--photo"
+              src="./assets/images/logo-awesome-profile-cards.svg"
+              title="awesome-profile cards logo"
+          /></a>
+        </div>
+      </header>
 
-    <main class="main">
-      <div class="photo-container">
-        <section class="section__card">
-          <div class="section__container">
-            <button class="reset"><i class="fa fa-trash"></i>Reset</button>
-            <div class="card palette1card">
-              <div class="card__titles">
-                <h3 class="card__titles--name js-preview-name">Nombre apellidos</h3>
-                <h4 class="card__titles--job">Front-End Developer</h4>
-              </div>
-              <img
-                class="card__image"
-                src="./assets/images/lee.jpg"
-                title="Profile photo"
-                alt="Profile photo"
-              />
-              <div class="card__links--container">
-                <ul class="logo__list">
-                  <li class="logo__list--item">
-                    <a class="link__card" href="" title=""
-                      ><i class="fa fa-mobile" aria-hidden="true"></i
-                    ></a>
-                  </li>
-                  <li class="logo__list--item">
-                    <a class="link__card js-preview-email" href="" title=""
-                      ><i class="fa fa-envelope-o"></i
-                    ></a>
-                  </li>
-                  <li class="logo__list--item">
-                    <a class="link__card" href="" title=""
-                      ><i class="fa fa-linkedin"></i
-                    ></a>
-                  </li>
-                  <li class="logo__list--item">
-                    <a class="link__card" href="" title=""
-                      ><i class="fa fa-github-alt"></i
-                    ></a>
-                  </li>
-                </ul>
+      <main class="main">
+        <div class="photo-container">
+          <section class="section__card">
+            <div class="section__container">
+              <button class="reset"><i class="fa fa-trash"></i>Reset</button>
+              <div class="card palette3card js_preview-card">
+                <div class="card__titles">
+                  <h3 class="card__titles--name js-preview-name">Nombre apellidos</h3>
+                  <h4 class="card__titles--job js-preview-job">Front-End Developer</h4>
+                </div>
+                <!-- getImage -->
+                <div class="card__image js__profile-image"></div>
+                <div class="card__links--container">
+                  <ul class="logo__list">
+                    <li class="logo__list--item">
+                      <a class="link__card js-preview-tel" title=""
+                        ><i class="fa fa-mobile" aria-hidden="true"></i
+                      ></a>
+                    </li>
+                    <li class="logo__list--item">
+                      <a class="link__card js-preview-email" href="" title=""
+                        ><i class="fa fa-envelope-o"></i
+                      ></a>
+                    </li>
+                    <li class="logo__list--item">
+                      <a class="link__card js-preview-linkedin" href="" title=""
+                        ><i class="fa fa-linkedin"></i
+                      ></a>
+                    </li>
+                    <li class="logo__list--item">
+                      <a class="link__card js-preview-github" href="" title=""
+                        ><i class="fa fa-github-alt"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
 
-      </div>
-      <div class="collapsable-container">
-        <section class="collapsable__design">
-          
-          <div class="collapsable__wrap">
-            <div class="collapsable__header">
-              <!--   <i class="fa fa-collapsable fa-object-ungroup" aria-hidden="true"></i> -->
+        </div>
+        <div class="collapsable-container">
+          <section
+            class="collapsable__wrap collapsable__design collapsable js-collapsable"
+          >
+            <!-- <div class="collapsable__wrap"> -->
+            <div class="collapsable__header js-collapsable-header">
               <h2 class="tittle__collapsable">
                 <i class="fa fa-collapsable fa-object-ungroup" aria-hidden="true"></i
                 > Diseña
@@ -98,56 +98,59 @@
               <i class="fa fa-angle-up" aria-hidden="true"></i>
             </div>
 
-          </div>
+            <!-- </div> -->
 
-          
+            <div class="collapsable__content collapsable__content--design">
+              <h3 class="design__title">colores</h3>
 
-          <div class="collapsable__content">
-            
-            <h3 class="design__title">colores</h3>
+              <label class="display-block design__square-label">
+                <input
+                  type="radio"
+                  name="palette"
+                  class="design__square-radio js_palette-select"
+                  value="1"
+                  checked
+                />
+                <ul class="palette-1-election">
+                  <li class="design__square-color color-1">Color A</li>
+                  <li class="design__square-color color-2">Color B</li>
+                  <li class="design__square-color color-3">Color C</li>
+                </ul>
+              </label>
 
-            <label class="display-block design__square-label">
-              <input type="radio" name="palette" class="design__square-radio" checked />
-              <ul class="palette-1">
-                <li class="design__square-color color-1">Color A</li>
-                <li class="design__square-color color-2">Color B</li>
-                <li class="design__square-color color-3">Color C</li>
-              </ul>
-            </label> 
+              <label class="display-block design__square-label">
+                <input
+                  type="radio"
+                  name="palette"
+                  value="2"
+                  class="design__square-radio js_palette-select"
+                />
+                <ul class="palette-2-election">
+                  <li class="design__square-color color-1">Color A</li>
+                  <li class="design__square-color color-2">Color B</li>
+                  <li class="design__square-color color-3">Color C</li>
+                </ul>
+              </label>
 
-            <label class="display-block design__square-label">
-              <input type="radio" name="palette" class="design__square-radio" />
-              <ul class="palette-2">
-                <li class="design__square-color color-1">Color A</li>
-                <li class="design__square-color color-2">Color B</li>
-                <li class="design__square-color color-3">Color C</li>
-              </ul>
-            </label>
-
-            <label class="display-block design__square-label">
-              <input type="radio" name="palette" class="design__square-radio" />
-              <ul class="palette-3">
-                <li class="design__square-color color-1">Color A</li>
-                <li class="design__square-color color-2">Color B</li>
-                <li class="design__square-color color-3">Color C</li>
-              </ul>
-            </label>
-          </div>
-        </section>
-
-        <section>
-          <div class="colapsable_form">
-            <!-- <div class="left">
-              <span class="fa__form"
-                ><i class="fa fa-keyboard-o" aria-hidden="true"></i
-              ></span>
-              <h2 class="form__colap--h2">Rellena</h2>
+              <label class="display-block design__square-label">
+                <input
+                  type="radio"
+                  name="palette"
+                  value="3"
+                  class="design__square-radio js_palette-select"
+                />
+                <ul class="palette-3-election">
+                  <li class="design__square-color color-1">Color A</li>
+                  <li class="design__square-color color-2">Color B</li>
+                  <li class="design__square-color color-3">Color C</li>
+                </ul>
+              </label>
             </div>
-            <i class="fa fa-angle-up" aria-hidden="true"></i> -->
-          
-          
-            <div class="collapsable__header">
-              <!--   <i class="fa fa-collapsable fa-keyboard-o" aria-hidden="true"></i> -->
+          </section>
+
+          <section class="colapsable_form collapsable js-collapsable collapsable--close">
+            <!--   <div class="colapsable_form"> -->
+            <div class="collapsable__header js-collapsable-header">
               <h2 class="tittle__collapsable">
                 <i class="fa fa-collapsable fa-keyboard-o" aria-hidden="true"></i
                 >Rellena
@@ -155,48 +158,48 @@
               <i class="fa fa-angle-up" aria-hidden="true"></i>
             </div>
 
-          </div>
-          
-          <form class="form" method="post" action="https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/">
-            <label class="form__label" for="name">Nombre completo</label>
-            <input class="form__input js-name" type="text" name="name" placeholder="Nombre completo" required />
-          
-            <label class="form__label" for="job">Puesto</label>
-            <input class="form__input" type="text" name="job" id="job" placeholder="Profesión" required />
-          
-            <div class="form__display--image">
-              <div>
-                <label class="form__label" for="photo">Imagen de perfil</label>
-                <button class="btn__submit--image" type="submit" value="Anadir imagen" name="photo" id="photo" required>
-                  Añadir imagen
-                </button>
-              </div>
-              <div class="form__preview--image"></div>
+            <!--   </div> -->
+            <div class="collapsable__content collapsable__content--form">
+              <form class="form" method="post" action="https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/">
+                <label class="form__label" for="name">Nombre completo</label>
+                <input class="form__input js-name" type="text" name="name" placeholder="Nombre completo" required />
+
+                <label class="form__label" for="job">Puesto</label>
+                <input class="form__input js-job" type="text" name="job" id="job" placeholder="Profesión" required />
+
+                <div class="form__display--image">
+                  <div>
+                    <label class="form__label js-label-image" for="photo">Imagen de perfil</label>
+                    <!-- getImage -->
+                    <button class="btn__submit--image js__profile-trigger" type="submit" value="Anadir imagen" name="photo"
+                      id="photo" required>
+                      Añadir imagen
+                    </button>
+                    <input type="file" name="" class="btn__submit--image action__hiddenField js__profile-upload-btn" />
+                  </div>
+                  <div class="form__preview--image js__profile-preview"></div>
+                </div>
+                <!--    <input type="file" name="" class="js__profile-upload" /> -->
+
+                <label class="form__label" for="email">Email</label>
+                <input class="form__input js-email" type="email" name="email" id="email" placeholder="maria.garcia@example.com"
+                  required />
+
+                <label class="form__label" for="phone">Telefono</label>
+                <input class="form__input js-tel" type="tel" name="phone" id="phone" placeholder="+34 666666666" />
+
+                <label class="form__label" for="linkedin">Linkedin</label>
+                <input class="form__input js-linkedin" type="url" name="linkedin" id="linkedin"
+                  placeholder="Nombre de usuario de LinkedIn" required />
+
+                <label class="form__label" for="github">Github</label>
+                <input class="form__input js-github" type="url" name="github" id="github"
+                  placeholder="Nombre de usuario de GitHub" required />
+              </form>
             </div>
-          
-            <label class="form__label" for="email">Email</label>
-            <input class="form__input js-email" type="email" name="email" id="email" placeholder="maria.garcia@example.com"
-              required />
-          
-            <label class="form__label" for="phone">Telefono</label>
-            <input class="form__input" type="tel" name="phone" id="phone" placeholder="+34 666666666" />
-          
-            <label class="form__label" for="linkedin">Linkedin</label>
-            <input class="form__input" type="url" name="linkedin" id="linkedin" placeholder="Nombre de usuario de LinkedIn"
-              required />
-          
-            <label class="form__label" for="github">Github</label>
-            <input class="form__input" type="url" name="github" id="github" placeholder="Nombre de usuario de GitHub" required />
-          </form>
-        </section>
-        <section class="share">
-            <!--     <h2 class="collapsable__header">
-                <i class="fa fa-share-alt" aria-hidden="true"></i>
-                <span class="tittle__share">Comparte</span>
-                <i class="fa fa-angle-up" aria-hidden="true"></i>
-            </h2> -->
-            <div class="collapsable__header">
-              <!--   <i class="fa fa-collapsable fa-share-alt" aria-hidden="true"></i> -->
+          </section>
+          <section class="share collapsable js-collapsable collapsable--close">
+            <div class="collapsable__header js-collapsable-header">
               <h2 class="tittle__collapsable">
                 <i class="fa fa-collapsable fa-share-alt" aria-hidden="true"></i
                 >Comparte
@@ -204,31 +207,41 @@
               <i class="fa fa-angle-up" aria-hidden="true"></i>
             </div>
 
-            <button class="button__create">
+            <div class="collapsable__content collapsable__content--share">
+              <button class="button__create link_animation">
                 <i class="fa fa-address-card-o" aria-hidden="true"></i>Crear tarjeta
-            </button>
-        </section>
-        <div class="confirm__share">
-            <p class="confirm__share--title">La tarjeta ha sido creada:</p>
-            <a class="confirm__share--link"
-                href="https://awesome-profile-card.com?id=A456DF0001">https://awesome-profile-card.com?id=A456DF0001</a>
-            <button class="button__share">
-                <i class="fa fa-twitter" aria-hidden="true"></i>Compartir en twitter
-            </button>
-        </div>
-        <div class="rectangle"></div>
-      </div>
-    </main>
-    <footer class="footer">
-      <h2 class="footer__text">Awesome profile-cards @2021</h2>
-      <img
-        src="./assets/images/logo-adalab.png"
-        class="footer__adalab-logo"
-        alt="Adalab logo"
-        title="Adalab logo"
-      />
-    </footer>
+              </button>
 
-    <script src="./assets/js/main.js"></script>
+              <div class="confirm__share">
+                <p class="confirm__share--title">La tarjeta ha sido creada:</p>
+                <a
+                  class="confirm__share--link"
+                  href="https://awesome-profile-card.com?id=A456DF0001"
+                  >https://awesome-profile-card.com?id=A456DF0001</a
+                >
+                <button class="button__share link_animation">
+                  <i class="fa fa-twitter" aria-hidden="true"></i>Compartir en twitter
+                </button>
+              </div>
+              <div class="rectangle"></div>
+            </div>
+          </section>
+
+        </div>
+      </main>
+      <footer class="footer">
+        <h2 class="footer__text">Awesome profile-cards @2021</h2>
+        <a href="https://adalab.es/" target="__blank">
+          <img
+            src="./assets/images/logo-adalab.png"
+            class="footer__adalab-logo"
+            alt="Adalab home logo link"
+            title="Adalab logo"
+          />
+        </a>
+      </footer>
+
+      <script src="./assets/js/main.js"></script>
+    </div>
   </body>
 </html>
