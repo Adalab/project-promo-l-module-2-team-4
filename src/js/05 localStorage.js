@@ -25,7 +25,7 @@ Recuperar del local storage:
 function saveInLocalStorage() {
   // obtengo los valores de todos los campos
   const userData = {
-    photo: fr.result,
+    photo: photo,
     palette: document.querySelector('.js_palette-select:checked').value,
     name: document.querySelector('.js-name').value,
     job: document.querySelector('.js-job').value,
