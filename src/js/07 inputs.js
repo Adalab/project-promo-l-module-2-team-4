@@ -29,26 +29,26 @@ Ejercicio 1:
 
 const inputsTextConfig = [
   {
-    inputClass: '.js-input-name',
-    cardClass: '.js-card-name',
+    inputClass: '.js-name',
+    cardClass: '.js-preview-name',
     defaultValue: 'Nombre apellidos',
     cardPrefix: '',
-    cardElementAttribute: 'innerHTML'
+    cardElementAttribute: 'innerHTML',
   },
   {
-    inputClass: '.js-input-job',
-    cardClass: '.js-card-job',
+    inputClass: '.js-job',
+    cardClass: '.js-preview-job',
     defaultValue: 'Programadora front end',
     cardPrefix: '',
-    cardElementAttribute: 'innerHTML'
+    cardElementAttribute: 'innerHTML',
   },
   {
-    inputClass: '.js-input-linkedin',
-    cardClass: '.js-card-linkedin',
+    inputClass: '.js-linkedin',
+    cardClass: '.js-preview-linkedin',
     defaultValue: '',
     cardPrefix: 'https://www.linkedin.com/in/',
-    cardElementAttribute: 'href'
-  }
+    cardElementAttribute: 'href',
+  },
 ];
 
 function updateAllInputs() {
@@ -62,11 +62,19 @@ function updateAllInputs() {
 
     // obtengo el elemento input, el origen
     const inputElement = document.querySelector(inputTextConfig.inputClass);
-    console.log('Elemento del formulario:', inputTextConfig.inputClass, inputElement);
+    console.log(
+      'Elemento del formulario:',
+      inputTextConfig.inputClass,
+      inputElement
+    );
 
     // obtengo el elemento de la card, el destino
     const cardElement = document.querySelector(inputTextConfig.cardClass);
-    console.log('Elemento del la tarjeta:', inputTextConfig.cardClass, cardElement);
+    console.log(
+      'Elemento del la tarjeta:',
+      inputTextConfig.cardClass,
+      cardElement
+    );
 
     // obtengo el valor del input
     let newValue = inputElement.value;
@@ -90,6 +98,7 @@ function updateAllInputs() {
       // compruebo si está vacío
       if (inputElement.value === '') {
         newValue = '#';
+        cardElement.parentNode.classList.add('hidden');
       } else {
         // limpio el prefijo por si acaso la usuaria ha escrito cosas como:
         // - https://github.com/migueldelmazo en vez de migueldelmazo a secas
@@ -97,6 +106,7 @@ function updateAllInputs() {
         newValue = newValue.replace(inputTextConfig.cardPrefix, '');
         // vuelvo a añadir el prefijo https://www.linkedin.com/in/
         newValue = inputTextConfig.cardPrefix + newValue;
+        cardElement.parentNode.classList.remove('hidden');
       }
       console.log('Valor del prefijo:', inputTextConfig.cardPrefix);
       console.log('Nuevo valor a poner en la tarjeta:', newValue);

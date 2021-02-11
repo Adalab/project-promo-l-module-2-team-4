@@ -6,30 +6,33 @@ const linkedinPreviewElement = document.querySelector('.js-preview-linkedin');
 const githubElement = document.querySelector('.js-github');
 const githubPreviewElement = document.querySelector('.js-preview-github');
 
-function handleLinkedin(){
+function handleLinkedin() {
   const linkedinValue = linkedinElement.value;
-  if (linkedinValue === ''){
+  if (linkedinValue === '') {
     linkedinPreviewElement.href = '';
-  }
-  else {
+    linkedinPreviewElement.parentNode.classList.add('hidden');
+  } else {
     linkedinPreviewElement.href = `https://www.linkedin.com/in/${linkedinValue}/`;
-    linkedinPreviewElement.target= '_blank';
+    linkedinPreviewElement.target = '_blank';
     linkedinPreviewElement.title = linkedinValue;
+    linkedinPreviewElement.parentNode.classList.remove('hidden');
   }
+  saveInLocalStorage();
 }
 
-function handleGithub(){
+function handleGithub() {
   const githubValue = githubElement.value;
   if (githubValue === '') {
-    githubPreviewElement.href='';
+    githubPreviewElement.href = '';
+    githubPreviewElement.parentNode.classList.add('hidden');
+  } else {
+    githubPreviewElement.href = `https://github.com/${githubValue}`;
+    githubPreviewElement.target = '_blank';
+    githubPreviewElement.title = githubValue;
+    githubPreviewElement.parentNode.classList.remove('hidden');
   }
-  else {
-    githubPreviewElement.href= `https://github.com/${githubValue}`;
-    githubPreviewElement.target= '_blank';
-    githubPreviewElement.title= githubValue;
-  }
-
+  saveInLocalStorage();
 }
 
-linkedinElement.addEventListener('keyup',handleLinkedin);
-githubElement.addEventListener('keyup',handleGithub);
+linkedinElement.addEventListener('keyup', handleLinkedin);
+githubElement.addEventListener('keyup', handleGithub);

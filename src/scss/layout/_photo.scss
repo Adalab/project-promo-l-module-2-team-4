@@ -65,7 +65,7 @@
     width: 240px;
     height: 200px;
     //getImage
-    background-image: url("../images/lee.jpg");
+    background-image: url('../images/lee.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -175,4 +175,8 @@
 .fa-trash {
   font-size: 12px;
   margin: 0 8px 0 0;
+}
+
+.hidden {
+  display: none;
 }
