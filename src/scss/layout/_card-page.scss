@@ -1,3 +1,10 @@
+.page__column {
+  @media all and (min-width: 768px) {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+}
+
 .main {
   @media all and (min-width: 768px) {
     display: grid;
