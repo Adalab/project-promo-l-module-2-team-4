@@ -22,7 +22,8 @@ function writeImage() {
 }
 
 function updatePhoto() {
-  const currentPhoto = photo || '../assets/images/lee.jpg';
+  const currentPhoto = photo || './assets/images/lee.jpg';
+  /*     '//beta.adalab.es/project-promo-l-module-2-team-4/docs/assets/images/lee.jpg'; */
   profilePreview.style.backgroundImage = `url(${currentPhoto})`;
   profileImage.style.backgroundImage = `url(${currentPhoto})`;
 }
