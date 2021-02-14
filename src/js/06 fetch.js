@@ -2,6 +2,7 @@
 
 const createBtn = document.querySelector(".js-create-btn");
 const cardResultElement = document.querySelector(".js-card-result");
+const linkElement = document.querySelector(".confirm__share--link");
 
 function handleCreateBtn(ev) {
   ev.preventDefault();
@@ -21,9 +22,12 @@ function handleCreateBtn(ev) {
     .then((data) => {
       console.log("Server response:", data);
       if (data.success === true) {
-        cardResultElement.innerHTML = data.cardURL;
+        linkElement.href = data.cardURL;
+        linkElement.innerHTML = data.cardURL;
+        cardResultElement.classList.remove("share-hidden");
       } else {
         cardResultElement.innerHTML = data.error;
+        cardResultElement.classList.remove("share-hidden");
       }
     });
 }

@@ -20,11 +20,8 @@ Recuperar del local storage:
 - 5º Llamamos a las funciones que replican los datos desde el formulario a la tarjeta
 
 */
-
-// cuando la usuaria cambia cualquier cosa en el formulario debemos llamar a esta función
-function saveInLocalStorage() {
-  // obtengo los valores de todos los campos
-  const userData = {
+function getUserData() {
+  return {
     photo: photo,
     palette: document.querySelector(".js_palette-select:checked").value,
     name: document.querySelector(".js-name").value,
@@ -34,6 +31,13 @@ function saveInLocalStorage() {
     linkedin: document.querySelector(".js-linkedin").value,
     github: document.querySelector(".js-github").value,
   };
+}
+
+// cuando la usuaria cambia cualquier cosa en el formulario debemos llamar a esta función
+
+function saveInLocalStorage() {
+  // obtengo los valores de todos los campos
+  const userData = getUserData();
   // lo convierto a string porque local storage solo admite strings
   const userDataInString = JSON.stringify(userData);
   // lo guardo en el local storage en el campo que me apetece
@@ -45,6 +49,7 @@ function getFromLocalStorage() {
   // obtengo los datos desde el local storage
   const userDataInString = localStorage.getItem("userData");
   // compruebo si hay datos válidos, es decir si la usuaria ya había entrado en nuestra web anteriormente
+  debugger;
   if (userDataInString !== null) {
     const userData = JSON.parse(userDataInString);
     // actualizo los inputs del formulario
