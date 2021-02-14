@@ -1,100 +1,44 @@
 <section class="colapsable_form collapsable js-collapsable collapsable--close">
   <!--   <div class="colapsable_form"> -->
-  <include
-    src="./collapsable-header.html"
-    collapsableIcon="fa-keyboard-o"
-    collapsableTitle="Rellena"
-  ></include>
+  <include src="./collapsable-header.html" collapsableIcon="fa-keyboard-o" collapsableTitle="Rellena"></include>
   <!--   </div> -->
   <div class="collapsable__content collapsable__content--form">
-    <form
-      class="form js-form"
-      method="post"
-      action="https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/"
-    >
+    <form class="form js-form" method="post" action="https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/">
       <label class="form__label" for="name">Nombre completo</label>
-      <input
-        class="form__input js-name"
-        type="text"
-        name="name"
-        placeholder="Nombre completo"
-        required
-      />
+      <input class="form__input js-name js-input-text" type="text" name="name" placeholder="Nombre completo" required />
 
       <label class="form__label" for="job">Puesto</label>
-      <input
-        class="form__input js-job"
-        type="text"
-        name="job"
-        id="job"
-        placeholder="Profesión"
-        required
-      />
+      <input class="form__input js-job js-input-text" type="text" name="job" id="job" placeholder="Profesión"
+        required />
 
       <div class="form__display--image">
         <div>
-          <label class="form__label js-label-image" for="photo"
-            >Imagen de perfil</label
-          >
+          <label class="form__label js-label-image" for="photo">Imagen de perfil</label>
           <!-- getImage -->
-          <button
-            class="btn__submit--image js__profile-trigger"
-            type="submit"
-            value="Anadir imagen"
-            name="photo"
-            id="photo"
-            required
-          >
+          <button class="btn__submit--image js__profile-trigger" type="submit" value="Anadir imagen" name="photo"
+            id="photo" required>
             Añadir imagen
           </button>
-          <input
-            type="file"
-            name=""
-            class="btn__submit--image action__hiddenField js__profile-upload-btn"
-          />
+          <input type="file" name="" class="btn__submit--image action__hiddenField js__profile-upload-btn" />
         </div>
         <div class="form__preview--image js__profile-preview"></div>
       </div>
       <!--    <input type="file" name="" class="js__profile-upload" /> -->
 
       <label class="form__label" for="email">Email</label>
-      <input
-        class="form__input js-email"
-        type="email"
-        name="email"
-        id="email"
-        placeholder="maria.garcia@example.com"
-        required
-      />
+      <input class="form__input js-email js-input-text" type="email" name="email" id="email"
+        placeholder="nombre.apellido@example.com" required />
 
       <label class="form__label" for="phone">Telefono</label>
-      <input
-        class="form__input js-tel"
-        type="tel"
-        name="phone"
-        id="phone"
-        placeholder="+34 666666666"
-      />
+      <input class="form__input js-tel js-input-text" type="tel" name="phone" id="phone" placeholder="+34 666666666" />
 
       <label class="form__label" for="linkedin">Linkedin</label>
-      <input
-        class="form__input js-linkedin"
-        type="url"
-        name="linkedin"
-        id="linkedin"
-        placeholder="Nombre de usuario de LinkedIn"
-        required
-      />
+      <input class="form__input js-linkedin js-input-text" type="url" name="linkedin" id="linkedin"
+        placeholder="Nombre de usuario de LinkedIn" required />
 
       <label class="form__label" for="github">Github</label>
-      <input
-        class="form__input js-github"
-        type="url"
-        name="github"
-        id="github"
-        placeholder="Nombre de usuario de GitHub"
-        required
-      />
+      <input class="form__input js-github js-input-text" type="url" name="github" id="github"
+        placeholder="Nombre de usuario de GitHub" required />
     </form>
   </div>
 </section>

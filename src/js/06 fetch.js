@@ -7,7 +7,7 @@ function handleCreateBtn(ev) {
   ev.preventDefault();
   console.log("Mis datos", getUserData());
 
-  const url = "https://profileawesome.herokuapp.com/card";
+  const url = "https://awesome-profile-cards.herokuapp.com/card";
   const data = getUserData();
 
   fetch(url, {
