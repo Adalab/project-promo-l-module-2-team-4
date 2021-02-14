@@ -68,7 +68,7 @@ function getFromLocalStorage() {
     }
     // propago los datos desde el formulario a la tarjeta
     updateAllInputs();
-    //updatePalette();
+    handlePalette();
     updatePhoto();
   }
 }
