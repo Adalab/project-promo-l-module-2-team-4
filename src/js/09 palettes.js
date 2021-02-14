@@ -10,7 +10,6 @@ function handlePalette() {
   let checkedPalette = document.querySelector(".js_palette-select:checked");
   let checkedPaletteValue = checkedPalette.value;
   cardPreviewElement.classList.add("palette-" + checkedPaletteValue);
-  saveInLocalStorage();
 }
 
 for (const paletteElement of paletteInputElement) {
