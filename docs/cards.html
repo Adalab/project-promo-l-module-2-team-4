@@ -48,32 +48,31 @@
         <div class="photo-container">
           <section class="section__card">
             <div class="section__container">
-              <button class="reset"><i class="fa fa-trash"></i>Reset</button>
+              <button class="reset js-reset"><i class="fa fa-trash"></i>Reset</button>
               <div class="card palette3card js_preview-card">
                 <div class="card__titles">
                   <h3 class="card__titles--name js-preview-name">Nombre apellidos</h3>
-                  <h4 class="card__titles--job js-preview-job">Front-End Developer</h4>
+                  <h4 class="card__titles--job js-preview-job">Programadora front end</h4>
                 </div>
-                <!-- getImage -->
                 <div class="card__image js__profile-image"></div>
                 <div class="card__links--container">
                   <ul class="logo__list">
-                    <li class="logo__list--item">
+                    <li class="logo__list--item js-logo-list hidden">
                       <a class="link__card js-preview-tel" title=""
                         ><i class="fa fa-mobile" aria-hidden="true"></i
                       ></a>
                     </li>
-                    <li class="logo__list--item">
+                    <li class="logo__list--item js-logo-list hidden">
                       <a class="link__card js-preview-email" href="" title=""
                         ><i class="fa fa-envelope-o"></i
                       ></a>
                     </li>
-                    <li class="logo__list--item">
+                    <li class="logo__list--item js-logo-list hidden">
                       <a class="link__card js-preview-linkedin" href="" title=""
                         ><i class="fa fa-linkedin"></i
                       ></a>
                     </li>
-                    <li class="logo__list--item">
+                    <li class="logo__list--item js-logo-list hidden">
                       <a class="link__card js-preview-github" href="" title=""
                         ><i class="fa fa-github-alt"></i
                       ></a>
@@ -160,12 +159,13 @@
 
             <!--   </div> -->
             <div class="collapsable__content collapsable__content--form">
-              <form class="form" method="post" action="https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/">
+              <form class="form js-form" method="post" action="https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/">
                 <label class="form__label" for="name">Nombre completo</label>
-                <input class="form__input js-name" type="text" name="name" placeholder="Nombre completo" required />
+                <input class="form__input js-name js-input-text" type="text" name="name" placeholder="Nombre completo" required />
 
                 <label class="form__label" for="job">Puesto</label>
-                <input class="form__input js-job" type="text" name="job" id="job" placeholder="Profesión" required />
+                <input class="form__input js-job js-input-text" type="text" name="job" id="job" placeholder="Profesión"
+                  required />
 
                 <div class="form__display--image">
                   <div>
@@ -182,18 +182,18 @@
                 <!--    <input type="file" name="" class="js__profile-upload" /> -->
 
                 <label class="form__label" for="email">Email</label>
-                <input class="form__input js-email" type="email" name="email" id="email" placeholder="maria.garcia@example.com"
-                  required />
+                <input class="form__input js-email js-input-text" type="email" name="email" id="email"
+                  placeholder="nombre.apellido@example.com" required />
 
                 <label class="form__label" for="phone">Telefono</label>
-                <input class="form__input js-tel" type="tel" name="phone" id="phone" placeholder="+34 666666666" />
+                <input class="form__input js-tel js-input-text" type="tel" name="phone" id="phone" placeholder="+34 666666666" />
 
                 <label class="form__label" for="linkedin">Linkedin</label>
-                <input class="form__input js-linkedin" type="url" name="linkedin" id="linkedin"
+                <input class="form__input js-linkedin js-input-text" type="url" name="linkedin" id="linkedin"
                   placeholder="Nombre de usuario de LinkedIn" required />
 
                 <label class="form__label" for="github">Github</label>
-                <input class="form__input js-github" type="url" name="github" id="github"
+                <input class="form__input js-github js-input-text" type="url" name="github" id="github"
                   placeholder="Nombre de usuario de GitHub" required />
               </form>
             </div>
@@ -208,20 +208,16 @@
             </div>
 
             <div class="collapsable__content collapsable__content--share">
-              <button class="button__create link_animation">
+              <button class="button__create link_animation js-create-btn">
                 <i class="fa fa-address-card-o" aria-hidden="true"></i>Crear tarjeta
               </button>
 
-              <div class="confirm__share">
+              <div class="confirm__share js-card-result share-hidden">
                 <p class="confirm__share--title">La tarjeta ha sido creada:</p>
-                <a
-                  class="confirm__share--link"
-                  href="https://awesome-profile-card.com?id=A456DF0001"
-                  >https://awesome-profile-card.com?id=A456DF0001</a
-                >
-                <button class="button__share link_animation">
+                <a class="confirm__share--link" href=""></a>
+                <!--       <button class="button__share link_animation js-twitter">
                   <i class="fa fa-twitter" aria-hidden="true"></i>Compartir en twitter
-                </button>
+                </button> -->
               </div>
               <div class="rectangle"></div>
             </div>
