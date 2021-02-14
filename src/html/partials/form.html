@@ -3,9 +3,9 @@
   <include src="./collapsable-header.html" collapsableIcon="fa-keyboard-o" collapsableTitle="Rellena"></include>
   <!--   </div> -->
   <div class="collapsable__content collapsable__content--form">
-    <form class="form js-form" method="post" action="https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/">
-      <label class="form__label" for="name">Nombre completo</label>
-      <input class="form__input js-name js-input-text" type="text" name="name" placeholder="Nombre completo" required />
+    <form class="form" method="post" action="https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/">
+      <label class="form__label" for="name" >Nombre completo</label>
+      <input class="form__input js-name" maxlength="16" type="text" name="name" placeholder="Nombre completo" required />
 
       <label class="form__label" for="job">Puesto</label>
       <input class="form__input js-job js-input-text" type="text" name="job" id="job" placeholder="Profesión"
