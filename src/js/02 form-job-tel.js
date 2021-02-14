@@ -16,10 +16,10 @@ function handleName(event) {
   const nameValue = event.target.value;
   if (nameValue === '') {
     namePreviewElement.innerHTML = 'Nombre Apellido';
-    console.log(namePreviewElement.innerHTML);
   } else {
     namePreviewElement.innerHTML = nameValue;
   }
+  saveInLocalStorage();
 }
 
 function handleJob(event) {
@@ -29,35 +29,36 @@ function handleJob(event) {
   } else {
     jobPreviewElement.innerHTML = jobValue;
   }
+  saveInLocalStorage();
 }
 
 function handleEmail(event) {
   const emailValue = event.target.value;
   if (emailValue === '') {
     emailPreviewElement.href = '';
+    emailPreviewElement.parentNode.classList.add('hidden');
   } else {
     emailPreviewElement.href = `mailto:${emailValue}`;
     emailPreviewElement.title = `mailto:${emailValue}`;
-    console.log(emailPreviewElement.href);
+    emailPreviewElement.parentNode.classList.remove('hidden');
   }
+  saveInLocalStorage();
 }
 
 function handleTel(event) {
   const telValue = event.target.value;
-  console.log(telValue);
   if (telValue === '') {
-    console.log(telValue);
     telPreviewElement.href = 'tel:+34 666666666';
+    telPreviewElement.parentNode.classList.add('hidden');
   } else {
-    console.log(telValue);
     telPreviewElement.href = `tel:${telValue}`;
     telPreviewElement.title = `tel:${telValue}`;
-    console.log(telPreviewElement.href);
+    telPreviewElement.parentNode.classList.remove('hidden');
   }
+  saveInLocalStorage();
 }
 
 nameElement.addEventListener('keyup', handleName);
 jobElement.addEventListener('keyup', handleJob);
 emailElement.addEventListener('keyup', handleEmail);
 telElement.addEventListener('keyup', handleTel);
-
