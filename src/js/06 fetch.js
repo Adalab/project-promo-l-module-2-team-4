@@ -1,35 +1,43 @@
-"use strict";
+'use strict';
 
-const createBtn = document.querySelector(".js-create-btn");
-const cardResultElement = document.querySelector(".js-card-result");
-const linkElement = document.querySelector(".confirm__share--link");
+const createBtn = document.querySelector('.js-create-btn');
+const cardResultElement = document.querySelector('.js-card-result');
+const linkElement = document.querySelector('.confirm__share--link');
+const titleElement = document.querySelector('.confirm__share--title');
 
 function handleCreateBtn(ev) {
   ev.preventDefault();
-  console.log("Mis datos", getUserData());
 
-  const url = "https://awesome-profile-cards.herokuapp.com/card";
+  const url = 'https://awesome-profile-cards.herokuapp.com/card';
   const data = getUserData();
 
   fetch(url, {
-    method: "POST",
+    method: 'POST',
     body: JSON.stringify(data),
     headers: {
-      "Content-Type": "application/json",
+      'Content-Type': 'application/json',
     },
   })
     .then((response) => response.json())
     .then((data) => {
-      console.log("Server response:", data);
       if (data.success === true) {
+        titleElement.innerHTML = 'La tarjeta ha sido creada:';
         linkElement.href = data.cardURL;
         linkElement.innerHTML = data.cardURL;
-        cardResultElement.classList.remove("share-hidden");
+        cardResultElement.classList.remove('share-hidden');
       } else {
-        cardResultElement.innerHTML = data.error;
-        cardResultElement.classList.remove("share-hidden");
+        titleElement.innerHTML = data.error;
+        linkElement.href = '';
+        linkElement.innerHTML = '';
+        cardResultElement.classList.remove('share-hidden');
       }
     });
 }
 
-createBtn.addEventListener("click", handleCreateBtn);
+createBtn.addEventListener('click', handleCreateBtn);
+
+function resetLink() {
+  cardResultElement.classList.add('share-hidden');
+  linkElement.innerHTML = '';
+  linkElement.href = '';
+}

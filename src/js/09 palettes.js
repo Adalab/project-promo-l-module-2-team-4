@@ -3,7 +3,6 @@
 
 const paletteInputElement = document.querySelectorAll('.js_palette-select');
 const cardPreviewElement = document.querySelector('.js_preview-card');
-let checkedPalette = 1;
 
 function handlePalette() {
   cardPreviewElement.classList.remove('palette-1', 'palette-2', 'palette-3');
@@ -16,4 +15,3 @@ function handlePalette() {
 for (const paletteElement of paletteInputElement) {
   paletteElement.addEventListener('change', handlePalette);
 }
-/* handlePalette(); */

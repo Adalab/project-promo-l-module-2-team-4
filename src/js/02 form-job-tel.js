@@ -16,7 +16,6 @@ function handleName(event) {
   const nameValue = event.target.value;
   if (nameValue === '') {
     namePreviewElement.innerHTML = 'Nombre Apellido';
-    console.log(namePreviewElement.innerHTML);
   } else {
     namePreviewElement.innerHTML = nameValue;
   }
@@ -42,24 +41,19 @@ function handleEmail(event) {
     emailPreviewElement.href = `mailto:${emailValue}`;
     emailPreviewElement.title = `mailto:${emailValue}`;
     emailPreviewElement.parentNode.classList.remove('hidden');
-    console.log(emailPreviewElement.href);
   }
   saveInLocalStorage();
 }
 
 function handleTel(event) {
   const telValue = event.target.value;
-  console.log(telValue);
   if (telValue === '') {
-    console.log(telValue);
     telPreviewElement.href = 'tel:+34 666666666';
     telPreviewElement.parentNode.classList.add('hidden');
   } else {
-    console.log(telValue);
     telPreviewElement.href = `tel:${telValue}`;
     telPreviewElement.title = `tel:${telValue}`;
     telPreviewElement.parentNode.classList.remove('hidden');
-    console.log(telPreviewElement.href);
   }
   saveInLocalStorage();
 }

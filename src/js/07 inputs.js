@@ -76,26 +76,12 @@ function updateAllInputs() {
   // recorro los 6 inputs del array inputsTextConfig
   for (const inputTextConfig of inputsTextConfig) {
     // por cada objeto del array inputsTextConfig hago:
-    console.log(
-      'Empiezo una nueva iteración del for con la configuración del elemento:',
-      inputTextConfig
-    );
 
     // obtengo el elemento input, el origen
     const inputElement = document.querySelector(inputTextConfig.inputClass);
-    console.log(
-      'Elemento del formulario:',
-      inputTextConfig.inputClass,
-      inputElement
-    );
 
     // obtengo el elemento de la card, el destino
     const cardElement = document.querySelector(inputTextConfig.cardClass);
-    console.log(
-      'Elemento del la tarjeta:',
-      inputTextConfig.cardClass,
-      cardElement
-    );
 
     // obtengo el valor del input
     let newValue = inputElement.value;
@@ -108,8 +94,7 @@ function updateAllInputs() {
       } else {
         newValue = inputElement.value;
       }
-      console.log('Valor por defecto:', inputTextConfig.defaultValue);
-      console.log('Nuevo valor a poner en la tarjeta:', newValue);
+
       // actualizo la tarjeta
       cardElement.innerHTML = newValue;
     }
@@ -129,12 +114,10 @@ function updateAllInputs() {
         newValue = inputTextConfig.cardPrefix + newValue;
         cardElement.parentNode.classList.remove('hidden');
       }
-      console.log('Valor del prefijo:', inputTextConfig.cardPrefix);
-      console.log('Nuevo valor a poner en la tarjeta:', newValue);
+
       // actualizo la tarjeta
       cardElement.href = newValue;
     }
-    console.log('-------------------------------------------------');
   }
   // después de cualquier acción del usuario guardo en el local storage
   saveInLocalStorage();

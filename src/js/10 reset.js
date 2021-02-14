@@ -7,8 +7,6 @@ function handleReset() {
   form.reset();
   profileImage.removeAttribute('style');
   profilePreview.removeAttribute('style');
-  /*   cardPreviewElement.classList.remove('palette-1', 'palette-2', 'palette-3');
-  cardPreviewElement.classList.add('palette-1'); */
   const paletteElements = document.querySelectorAll('.js_palette-select');
   for (const paletteElement of paletteElements) {
     if (paletteElement.value === '1') {
@@ -21,7 +19,7 @@ function handleReset() {
   }
   updateAllInputs();
   handlePalette();
-  /*   updatePhoto(); */
+  resetLink();
   localStorage.removeItem('userData');
 }
 
