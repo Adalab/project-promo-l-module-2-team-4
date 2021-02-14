@@ -5,38 +5,6 @@
   align-items: center;
   border-top: 1px solid $color-line;
   margin: 0 20px 0 20px;
-  // & .collapsable__header {
-  //   display: flex;
-  //   justify-content: center;
-  //   padding-top: 10px;
-  //   width: 100%;
-  // }
-  // & .fa-share-alt {
-  //   width: 16px;
-  //   height: 18px;
-  //   color: $color-icons;
-  //   font-size: 18px;
-  //   font-weight: normal;
-  //   font-stretch: normal;
-  //   font-style: normal;
-  //   line-height: normal;
-  //   letter-spacing: normal;
-  //   text-align: center;
-  //   margin-right: 12px;
-  // }
-  // & .tittle__collapsable {
-  //   text-transform: uppercase;
-  //   font-family: $font-second;
-  //   font-size: 18px;
-  //   color: $color-cards-text;
-  //   // margin-right: 100px;
-  // }
-  // & .fa-angle-up {
-  //   width: 16px;
-  //   height: 20px;
-  //   // margin: 0 0 33px 24px;
-  //   color: $color-cards-text;
-  // }
   & .button__create {
     width: 199px;
     height: 50px;
@@ -52,6 +20,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  & .button__create:focus {
+    border: none;
+  }
+  & .button__create:visited {
+    border: none;
+  }
+  & .button__create:active {
+    border: none;
+  }
+  & .button__create:link {
+    border: none;
   }
   & .fa-address-card-o {
     width: 25px;
@@ -81,7 +61,6 @@
   border-top: 1px solid $color-line;
   border-bottom: 1px solid $color-line;
   align-items: center;
-  display: none;
   &--title {
     margin: 20px 0 5px 0;
     font-family: $font-second;
@@ -105,7 +84,9 @@
     text-align: center;
     color: $color-icons;
   }
-  & .button__share {
+
+  //TWITTER BUTTON
+  /*   & .button__share {
     width: 181px;
     height: 30px;
     margin: 10px 0 30px 0;
@@ -124,7 +105,8 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-  }
+
+  } */
   & .fa-twitter {
     width: 18px;
     height: 18px;
@@ -140,7 +122,7 @@
   }
   @media all and (min-width: 768px) {
     margin: 0;
-    width: 50vw;
+    width: 100%;
   }
 }
 .rectangle {
@@ -154,4 +136,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.share-hidden {
+  display: none;
 }

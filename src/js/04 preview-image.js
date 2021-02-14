@@ -6,6 +6,8 @@ const fileField = document.querySelector('.js__profile-upload-btn');
 const profileImage = document.querySelector('.js__profile-image');
 const profilePreview = document.querySelector('.js__profile-preview');
 
+let photo = '';
+
 function getImage(e) {
   const myFile = e.currentTarget.files[0];
   fr.addEventListener('load', writeImage);
@@ -13,9 +15,16 @@ function getImage(e) {
 }
 
 function writeImage() {
-  //revisar para caso general
-  profileImage.style.backgroundImage = `url(${fr.result})`;
-  profilePreview.style.backgroundImage = `url(${fr.result})`;
+  photo = fr.result;
+  updatePhoto();
+  // después de cualquier acción del usuario guardo en el local storage
+  saveInLocalStorage();
+}
+
+function updatePhoto() {
+  const currentPhoto = photo || '../assets/images/lee.jpg';
+  profilePreview.style.backgroundImage = `url(${currentPhoto})`;
+  profileImage.style.backgroundImage = `url(${currentPhoto})`;
 }
 
 function fakeFileClick() {
